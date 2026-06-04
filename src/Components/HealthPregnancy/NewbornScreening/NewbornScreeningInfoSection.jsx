@@ -1,0 +1,99 @@
+import React from "react";
+
+const NewbornScreeningInfoSection = () => {
+  return (
+    <div className="bg-gray-100 py-12 px-4 md:px-10 font-roboto">
+      
+      <div className="max-w-5xl mx-auto">
+        
+        {/* Section 1 */}
+        <div className="mb-10">
+          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
+            Key Diagnostic Evaluations
+          </div>
+
+          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
+            
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+              <p>
+                <b>Biochemical Screening </b> – Detects metabolic disorders including inborn errors of metabolism.
+
+
+
+              </p>
+            </li>
+
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+              <p>
+                <b>Molecular Genetic Testing </b>- Identifies pathogenic variants associated with congenital disorders.
+
+              </p>
+            </li>
+
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+              <p>
+                <b>Comprehensive Screening Panels </b> – Includes conditions such as congenital hypothyroidism, phenylketonuria (PKU), and other metabolic abnormalities.
+
+
+              </p>
+            </li>
+
+          </ul>
+        </div>
+
+        {/* Section 2 */}
+        <div>
+          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
+            Clinical Applications
+          </div>
+
+          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
+            
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+              <p>
+                Enables early diagnosis and intervention to prevent disease progression.
+
+
+              </p>
+            </li>
+
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+              <p>
+               Supports optimal growth, development, and neurocognitive outcomes.
+
+
+
+              </p>
+            </li>
+
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+              <p>
+                Reduces morbidity associated with undetected metabolic and genetic disorders.
+
+              </p>
+            </li>
+
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+              <p>
+              Provides critical guidance for ongoing clinical management and family counseling.
+
+
+              </p>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default NewbornScreeningInfoSection;
