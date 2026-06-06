@@ -150,7 +150,7 @@ className="h-32 md:h-35 mb-1 object-contain"
           {/* QUICK LINKS */}
           <div>
             <h4 className="text-xl font-semibold mb-4">Other Links</h4>
-            <li><Link to="/service/oncogeneticsdisorders" className="hover:text-green-300">Oncogenetics</Link></li>
+            <li className="list-none"><Link to="/service/oncogeneticsdisorders" className="hover:text-green-300">Oncogenetics</Link></li>
 
 
 
