@@ -9,19 +9,68 @@ const logo =
   const navLinks = [
       { label: "Home", path: "/" },
       { label: "About MDRC Genomics", path: "/about" },
+      { label: "Modern DNA Panels", path: "/" },
+      {
+        label: "Longevity Panels",
+        path: "#",
+        dropdown: [
+          { label: "Methylation Status Analysis", path: "#" },
+          { label: "Gut Microbiome Health Assessment Panel", path: "#" },
+          { label: "Omega-3 : Omega-6 Fatty Acid Ratio", path: "#" },
+          { label: "NAD+ / NADH Ratio", path: "#" },
+          { label: "GSH / GSSG Ratio", path: "#" },
+          {
+            label: "Neurotransmitter and Catecholamine Assessment",
+            path: "#",
+          },
+          { label: "Autism Assessment Panel", path: "#" },
+          { label: "Depression Assessment Panel", path: "#" },
+          {
+            label: "Complete Fat and Water-Soluble Vitamin Panel",
+            path: "#",
+          },
+          {
+            label: "High Precision Assessment of Vitamin D Status",
+            path: "#",
+          },
+          {
+            label: "New Born Screening for Errors of Metabolism",
+            path: "#",
+          },
+          { label: "Confirmation of Errors of Metabolism", path: "#" },
+          { label: "Therapeutic Drug Monitoring", path: "#" },
+          { label: "Drugs of Abuse Levels", path: "#" },
+        ],
+      },
       {
         label: "Genomic Services",
         path: "/genomic-services",
         dropdown: [
-          { label: "Tandem Mass Spectrometry", path: "/services/tandem-mass-spectrometry-tms" },
+           {
+            label: "Oncology",
+            path: "/services/oncologygenomics",
+            dropdown: [
+              { label: "Comprehensive Genomic Profiling (CGP)", path: "/service/comprehensivegenomicprofiling" },
+              { label: "Targeted Solid Tumor Gene Panels", path: "/service/targetedsolidtumorpanels" },
+              { label: "Hematological Malignancy Genomics", path: "/service/hematologicalmalignancygenomics" },
+              { label: "Liquid Biopsy (ctDNA Analysis)", path: "/service/liquidbiopsy" },
+              { label: "Hereditary Cancer Genomics (Germline Testing)", path: "/service/hereditarycancergenomics" },
+              { label: "RNA Sequencing for Fusion Detection", path: "/service/rnasequencingforfusion" },
+              
+            ],
+          },
+
+          
           {
+
+
             label: "Infectious Disease",
             path: "/services/infectious-Disease",
             dropdown: [
               { label: "Spectrum of Infectious Diseases", path: "/service/gastro" },
               { label: "Immuno Suppression", path: "/service/immunosuppression" },
-              { label: "Respiratory Panel (BioFire)", path: "/service/respiratorypanel" },
-              { label: "Gastrointestinal Panel (BioFire)", path: "/service/gastrointestinapanel" },
+              { label: "Respiratory Panel ", path: "/service/respiratorypanel" },
+              { label: "Gastrointestinal Panel ", path: "/service/gastrointestinapanel" },
               { label: "Influenza Panel", path: "/service/influenzapanel" },
               { label: "Tropical Fever Panel", path: "/service/tropicalfeverpanel" },
               { label: "TORCH PCR", path: "/service/torchpcrfeverpanel" },
@@ -38,11 +87,12 @@ const logo =
               { label: "Carrier Screening", path: "/services/carrier-screening" },
               { label: "Non-Invasive Prenatal Testing (NIPT)", path: "/reproductive-health-pregnancy/services/nipt" },
               { label: "Newborn Screening", path: "/reproductive-health-pregnancy/newbornscreening" },
+              { label: "Microarray", path: "/" },
               
             ],
           },
           {
-            label: "Cyto Genetic & FISH",
+            label: "Cytogenetics and FISH",
             path: "/services/cyto-genetic-and-fish",
             dropdown: [
               { label: "Amniocentesis", path: "/service/amniocentesis" },
@@ -50,12 +100,12 @@ const logo =
               { label: "Fetal Blood and Products of Conception", path: "/service/fetalconception" },
               { label: "Blood Culture and Karyotyping", path: "/service/bloodculturekaryotyping" },
               { label: "High Resolution Banding", path: "/service/highresolutionbanding" },
-              { label: "Fragile X and DNA Studies", path: "/service/fragilexanddnastudies" },
+
               
             ],
           },
           {
-            label: "Rare NGC Panel",
+            label: "Rare Diseases NGS panel",
             path: "/services/rare-nGS-panel",
             dropdown: [
               { label: "Neurological Disorders", path: "/service/neurologicaldisorders" },
@@ -67,12 +117,12 @@ const logo =
               { label: "Renal Genetic Disorders", path: "/service/renalgeneticdisorders" },
               { label: "Hematological Genetic Disorders", path: "/service/hematologicalgeneticdisorders" },
               { label: "Immunological Disorders", path: "/service/immunologicaldisorders" },
-              { label: "Oncogenetics", path: "/service/oncogeneticsdisorders" },
+              // { label: "Oncogenetics", path: "/service/oncogeneticsdisorders" },
               
             ],
           },
           {
-            label: "Whole Exome & Genome",
+            label: "Whole Exome & Whole Genome",
             path: "/services/whole-exome-and-genome-Sequencing",
             dropdown: [
               { label: "Genome Sequencing", path: "/service/genomesequencing" },
@@ -104,23 +154,17 @@ const logo =
               
             ],
           },
-          {
-            label: "Oncology",
-            path: "/services/oncologygenomics",
-            dropdown: [
-              { label: "Comprehensive Genomic Profiling (CGP)", path: "/service/comprehensivegenomicprofiling" },
-              { label: "Targeted Solid Tumor Gene Panels", path: "/service/targetedsolidtumorpanels" },
-              { label: "Hematological Malignancy Genomics", path: "/service/hematologicalmalignancygenomics" },
-              { label: "Liquid Biopsy (ctDNA Analysis)", path: "/service/liquidbiopsy" },
-              { label: "Hereditary Cancer Genomics (Germline Testing)", path: "/service/hereditarycancergenomics" },
-              { label: "RNA Sequencing for Fusion Detection", path: "/service/rnasequencingforfusion" },
-              
-            ],
-          },
+         
+         ],
+      },
+      {
+        label: "Contact Us",
+        path: "/contact",
+        dropdown: [
+          { label: "Contact Us", path: "/contact" },
+          { label: "Blog", path: "/blogs" },
         ],
       },
-      { label: "Blog", path: "/blogs" },
-      { label: "Contact Us", path: "/contact" },
     ];
 
   const Navbar = () => {
@@ -159,25 +203,25 @@ const logo =
         </div>
 
         {/* Main Header */}
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-[1680px] mx-auto px-4 lg:px-6">
 
-          <div className="flex justify-between items-center h-16 lg:h-20">
+          <div className="flex items-center justify-between gap-4 h-16 lg:h-20">
 
             {/* Logo */}
-            <Link to="/">
-              <img src={logo} className="h-12 lg:h-14" />
+            <Link to="/" className="shrink-0">
+              <img src={logo} className="h-12 lg:h-14 w-auto" />
             </Link>
 
             {/* Desktop Menu */}
-            <div className="hidden xl:flex items-center gap-6 text-gray-700">
+            <div className="hidden xl:flex flex-1 items-center justify-center gap-1 2xl:gap-2 text-[15px] 2xl:text-sm text-gray-700">
 
               {navLinks.map((link, index) => (
-                <div key={index} className="relative group font-semibold">
+                <div key={index} className="relative group shrink-0 font-semibold">
 
                   {!link.dropdown ? (
                     <Link
                       to={link.path}
-                      className={`px-3 py-2 rounded font-semibold ${
+                      className={`block whitespace-nowrap px-2 2xl:px-3 py-2 rounded font-semibold ${
                         location.pathname === link.path
                           ? "bg-gray-100"
                           : "hover:bg-gray-50"
@@ -187,18 +231,17 @@ const logo =
                     </Link>
                   ) : (
                     <>
-                      <button className="flex items-center gap-1 px-3 py-2 hover:text-primary">
+                      <button className="flex items-center gap-1 whitespace-nowrap px-2 2xl:px-3 py-2 hover:text-primary">
                         {link.label}
                         <ChevronDown className="w-4 h-4" />
                       </button>
 
                       {/* Dropdown */}
                       <div
-                        className="
+                        className={`
                           absolute
                           left-0
                           top-full
-                          w-72
                           bg-white
                           rounded-xl
                           shadow-xl
@@ -208,7 +251,12 @@ const logo =
                           group-hover:visible
                           transition-all
                           duration-200
-                        "
+                          ${
+                            link.label === "Longevity Panels"
+                              ? "w-96 max-h-[calc(100vh-9rem)] overflow-y-auto"
+                              : "w-72"
+                          }
+                        `}
                       >
                         {link.dropdown.map((item, i) => (
   <div key={i} className="relative group/item">
@@ -280,10 +328,12 @@ const logo =
                   bg-green-500
                   hover:bg-green-600
                   text-white
-                  px-6
+                  px-4
+                  2xl:px-6
                   py-3
                   rounded-xl
                   font-semibold
+                  whitespace-nowrap
                   transition-all
                   duration-300
                   hover:scale-105
@@ -380,6 +430,7 @@ const logo =
 
         {openSub === `${index}-${i}` && (
           <div className="pl-4 border-l border-gray-100 ml-2">
+
 
             {item.dropdown.map((sub, j) => (
               <Link

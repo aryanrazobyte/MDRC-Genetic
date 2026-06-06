@@ -25,7 +25,7 @@ const RespiratoryPanel = () => {
             </button>
 
             <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight">
-              Respiratory Panel (BioFire)
+              Respiratory Panel 
               <br />
              
             </h1>

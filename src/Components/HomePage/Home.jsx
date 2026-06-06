@@ -46,27 +46,30 @@ const Home = () => (
         </div>
 
         {/* CONTENT */}
-        <div className="flex flex-col gap-4 order-1 md:order-2">
+        <div className="flex flex-col gap-1 order-1 md:order-2">
           <h2 className="text-[28px] md:text-[32px] font-bold text-[#424040]">
-            Why Genomics?
+            Genomics and Molecular division
           </h2>
 
           <p className="text-[#424040] text-[16px] md:text-[18px] font-medium leading-relaxed">
-            <strong>Genomics</strong> is the cornerstone of precision medicine,
-            moving diagnostics from reactive treatment to proactive prevention.
-            By analyzing an individual’s unique{" "}
+            <strong>Genomics</strong> is the cornerstone of precision medicine, moving diagnostics from reactive treatment to proactive prevention. By analyzing an individual’s unique {" "}
             <strong>genetic architecture</strong>
-            we can identify molecular markers that traditional pathology often
-            overlooks.
+            we can identify molecular markers that traditional pathology often overlooks or is unable to determine
           </p>
 
           <p className="mt-2 text-[#424040] text-[16px] md:text-[18px] font-medium leading-relaxed">
-            This data-driven approach allows for the
-            <strong> detection of hereditary predispositions </strong>, the
-            diagnosis of complex rare diseases, and the optimization of
-            therapeutic interventions based on an individual's specific
-            biological makeup.
+            Our topline QTof LC-MS/MS system can identify very minute quantities of metabolites up to picogram level and this helps in certain disease conditions that can not be identified by other means.
           </p>
+
+
+         <p className="mt-2 text-[#424040] text-[16px] md:text-[18px] font-medium leading-relaxed">
+            This data-driven approach allows for the
+            <strong> detection of hereditary predispositions </strong>, the diagnosis of complex rare diseases, and the optimization of therapeutic interventions based on an individual's specific biological makeup.
+          </p>
+
+
+
+
 
           {/* BUTTON */}
           <Link to={"/about"}>

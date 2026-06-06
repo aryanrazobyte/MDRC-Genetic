@@ -2,21 +2,21 @@ import React from "react";
 
 const cards = [
   {
-    title: "21+ Labs across 8 States",
-    desc: "Uttar Pradesh, Haryana, Rajasthan, West Bengal, Assam, Jammu & Kashmir, Madhya Pradesh",
+    title: "30+ Labs across 8 States",
+    desc: "Haryana, Delhi, Uttar Pradesh, Rajasthan, Punjab, Jammu and Kashmir, West Bengal, Assam, Madhya Pradesh",
     icon: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827773/vite-project/b0xi9ibe3xmhk7oxmmwn.png",
     topBg: "#E6F8FF",
     gradient: "linear-gradient(to right, #005C96, #15AEE5)",
   },
   {
     title: "International Reach",
-    desc: "MDRC has international reach and get samples from UAE, Kenya, Uganda, Nigeria & Nepal.",
+    desc: "MDRC has international reach and gets samples for testing from foreign countries such as UAE, Kenya, Uganda, Tanzania, Nigeria, Nepal, Myanmar.",
     icon: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827780/vite-project/snznhvqe6fybfux144st.png",
     topBg: "#E0FFF5",
     gradient: "linear-gradient(to right, #05AF79, #0ECE91)",
   },
   {
-    title: "1800+ Touch points across India",
+    title: "2000+ Touch points across India",
     desc: "MDRC offers complete range of diagnostic facilities in Radiology & Pathology under one roof.",
     icon: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827775/vite-project/me6fwfpunxjsdkwoljjv.png",
     topBg: "#E6F8FF",

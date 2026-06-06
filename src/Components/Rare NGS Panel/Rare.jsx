@@ -20,7 +20,7 @@ const Rare = () => {
           
           {/* Desktop Heading */}
           <h2 className="hidden md:block text-2xl md:text-3xl font-semibold text-gray-800">
-            Rare NGS Panel
+            Rare Diseases NGS panel
           </h2>
 
           {/* Subheading */}

@@ -15,13 +15,13 @@ const services = [
     path: "/service/immunosuppression",
   },
   {
-    title: "Respiratory Panel (BioFire)",
+    title: "Respiratory Panel ",
     desc: "Respiratory panels utilize multiplex PCR technology for simultaneous detection of viral and bacterial pathogens..",
     img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828067/vite-project/kcnzekzpsppo7tmkdycb.svg",
     path: "/service/respiratorypanel",
   },
   {
-    title: "Gastrointestinal Panel (BioFire)",
+    title: "Gastrointestinal Panel ",
     desc: "Gastrointestinal panels detect a wide range of viral, bacterial, and parasitic agents responsible for infectious diarrhea..",
     img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827957/vite-project/gjtexmqbtfa4zyxkpujg.svg",
     path: "/service/gastrointestinapanel",

@@ -25,7 +25,7 @@ const DiseaseSpectrumofInfectiousDiseases = () => {
 
           {/* Description */}
           <p className="text-white md:text-gray-600 text-base md:text-lg leading-relaxed mb-6 mt-3">
-            MDRC provides comprehensive laboratory evaluation for a wide range of infectious diseases caused by viruses, bacteria, fungi, and parasites. Our advanced diagnostic platforms ensure accurate pathogen detection, supporting timely clinical intervention and effective infection control.
+            MDRC provides comprehensive laboratory evaluation for a wide range of infectious diseases caused by viruses, bacteria, fungi, and parasites. Our advanced diagnostic platforms ensure accurate pathogen detection, supporting timely clinical intervention and effective infection control. We have introduced the latest NGS platform for detection of any viral, bacterial or gungal disease which is highly useful and life saving test in ICU setting as it does not miss any infective agent.
           </p>
 
         </div>

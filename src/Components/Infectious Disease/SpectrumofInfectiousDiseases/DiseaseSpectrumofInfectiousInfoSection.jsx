@@ -37,6 +37,13 @@ const DiseaseSpectrumofInfectiousInfoSection = () => {
               </p>
             </li>
 
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+              <p>
+            The latest NGS platform identified all the known bacterial, viral and fungal infections , which are sometimes not identified in culture.
+              </p>
+            </li>
+
           </ul>
         </div>
 
@@ -74,6 +81,13 @@ const DiseaseSpectrumofInfectiousInfoSection = () => {
               <span className="text-green-500 mt-1 text-xl">•</span>
               <p>
                 Guides personalized treatment strategies based on pathogen identification and resistance profiles.
+</p>
+            </li>
+
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+              <p>
+                To diagnose infective agent in critically ill patients and to diagnose causative agent for persistent fever. 
 </p>
             </li>
 

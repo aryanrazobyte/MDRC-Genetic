@@ -4,7 +4,7 @@ import { ArrowRight, Bug, Baby, Microscope, Dna, FlaskConical, Pill } from "luci
 const services = [
   {
     icon: Pill,
-    title: "Tandem Mass Spectrometry (TMS)",
+    title: "Longevity Panels (TMS)",
     description: "LC-MS/MS (Liquid Chromatography–Tandem Mass Spectrometry) has become one of the most powerful analytical tools.",
     path: "/tandem-mass-spectrometry-tms",
   },
@@ -66,7 +66,7 @@ const ServicesOverview = () => (
       <div className="text-center  mx-auto mb-12">
         <span className="text-[#15AEE5] font-medium ">Our Expertise</span>
         <h2 className="font-heading text-[32px] font-bold  mt-1 mb-1">
-          Specialized Genetic Services
+        Specialised Genetic and Molecular Services
         </h2>
         <p className="text-[20px] text-[#424040] font-regular">
           From prenatal screening to rare disease diagnosis, our laboratory delivers clinically validated genomic insights.

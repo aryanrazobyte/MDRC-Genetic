@@ -23,7 +23,7 @@ const RarePanel = () => {
             </button>
 
             <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight">
-             Rare NGS Panel
+              Rare Diseases NGS panel
               <br />
              
             </h1>

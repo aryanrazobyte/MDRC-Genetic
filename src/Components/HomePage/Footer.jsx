@@ -143,18 +143,25 @@ className="h-32 md:h-35 mb-1 object-contain"
               <li><Link to="/services/whole-exome-and-genome-Sequencing" className="hover:text-green-300">Whole Exome & Genome</Link></li>
               <li><Link to="/services/pharmacogenomics" className="hover:text-green-300">Pharmacogenomics</Link></li>
               <li><Link to="/services/advanced-sequencing" className="hover:text-green-300">Advanced Sequencing</Link></li>
-              <li><Link to="/services/oncologygenomics" className="hover:text-green-300">Oncology Genomics</Link></li>
+              <li><Link to="/services/oncologygenomics" className="hover:text-green-300">Oncogenomics</Link></li>
             </ul>
           </div>
 
           {/* QUICK LINKS */}
           <div>
-            <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="text-xl font-semibold mb-4">Other Links</h4>
+            <li><Link to="/service/oncogeneticsdisorders" className="hover:text-green-300">Oncogenetics</Link></li>
+
+
+
+
+
+
+            {/* <ul className="space-y-2 text-sm">
               <li><Link to="/about" className="hover:text-green-300">About</Link></li>
               <li><Link to="/blogs" className="hover:text-green-300">Blog</Link></li>
               <li><Link to="/contact" className="hover:text-green-300">Contact Us</Link></li>
-            </ul>
+            </ul> */}
           </div>
 
           {/* CONTACT */}

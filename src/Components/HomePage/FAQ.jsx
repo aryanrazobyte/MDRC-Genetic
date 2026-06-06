@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "How accurate and reliable are MDRC’s genetic tests?",
     answer:
-      "All tests are performed in NABH & NABL accredited laboratories using validated protocols, advanced NGS platforms, and stringent quality control measures to ensure high accuracy and clinical reliability.",
+      "All tests are performed using validated protocols, advance NGS platforms with stringent quality control measures to ensure high accuracy and reliability.",
   },
   {
     question: "Who should consider genetic testing?",
