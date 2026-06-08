@@ -222,7 +222,8 @@ const logo =
                     <Link
                       to={link.path}
                       className={`block whitespace-nowrap px-2 2xl:px-3 py-2 rounded font-semibold ${
-                        location.pathname === link.path
+                        location.pathname === link.path &&
+                        navLinks.findIndex((item) => item.path === location.pathname) === index
                           ? "bg-gray-100"
                           : "hover:bg-gray-50"
                       }`}
