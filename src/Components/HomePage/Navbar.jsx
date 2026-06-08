@@ -12,13 +12,20 @@ const logo =
       { label: "Modern DNA Panels", path: "/services/modern-dna-panels" },
       {
         label: "Metabolomics Services",
-        path: "#",
+        path: "/services/metabolomics-services",
         dropdown: [
-          { label: "Methylation Status Analysis", path: "#" },
-          { label: "Gut Microbiome Health Assessment Panel", path: "#" },
-          { label: "Omega-3 : Omega-6 Fatty Acid Ratio", path: "#" },
-          { label: "NAD+ / NADH Ratio", path: "#" },
-          { label: "GSH / GSSG Ratio", path: "#" },
+          {
+            label: "Longevity Panels",
+            path: "/services/tandem-mass-spectrometry-tms",
+            dropdown: [
+              { label: "Methylation Status Analysis", path: "#" },
+              { label: "Gut Microbiome Health Assessment Panel", path: "#" },
+              { label: "Omega-3 : Omega-6 Fatty Acid Ratio", path: "#" },
+              { label: "NAD+ / NADH Ratio", path: "#" },
+              { label: "GSH / GSSG Ratio", path: "#" },
+            ],
+          },
+          
           {
             label: "Neurotransmitter and Catecholamine Assessment",
             path: "#",
@@ -253,6 +260,7 @@ const logo =
                           absolute
                           left-0
                           top-full
+                          z-[60]
                           bg-white
                           rounded-xl
                           shadow-xl
@@ -264,7 +272,7 @@ const logo =
                           duration-200
                           ${
                             link.label === "Metabolomics Services"
-                              ? "w-96 max-h-[calc(100vh-9rem)] overflow-y-auto"
+                              ? "w-96 max-h-[calc(100vh-9rem)] overflow-visible"
                               : "w-72"
                           }
                         `}
@@ -276,11 +284,10 @@ const logo =
       <>
         <Link
           to={item.path}
-          className="flex justify-between px-5 py-3 hover:bg-gray-50 font-medium"
+          className="flex justify-between items-center gap-2 px-5 py-3 hover:bg-gray-50 font-medium"
         >
-          {item.label}
-
-          <ChevronDown className="w-4 h-4 -rotate-90" />
+          <span>{item.label}</span>
+          <ChevronDown className="w-4 h-4 shrink-0 -rotate-90" />
         </Link>
 
         {/* LEVEL 2 DROPDOWN */}
@@ -289,7 +296,10 @@ const logo =
             absolute
             left-full
             top-0
-            w-64
+            z-[70]
+            w-80
+            max-h-[calc(100vh-9rem)]
+            overflow-y-auto
             bg-white
             rounded-xl
             shadow-xl
@@ -308,7 +318,7 @@ const logo =
             <Link
               key={j}
               to={sub.path}
-              className="block px-5 py-3 text-sm hover:bg-gray-50 font-medium"
+              className="block px-5 py-3 text-sm hover:bg-gray-50 font-medium leading-snug"
             >
               {sub.label}
             </Link>

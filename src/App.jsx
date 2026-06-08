@@ -22,6 +22,7 @@ import NIPT from "./Components/HealthPregnancy/NIPT/NIPT";
 import NewbornScreening from "./Components/HealthPregnancy/NewbornScreening/NewbornScreening";
 import Tms from "./Components/TMS/Tms";
 import ModernDNAPanel from "./Components/ModernDNAPanel/ModernDNAPanel";
+import MetabolomicsServices from "./Components/MetabolomicsServices/MetabolomicsServices";
 import SpectrumofInfectiousDiseases from "./Components/Infectious Disease/SpectrumofInfectiousDiseases/SpectrumofInfectiousDiseases";
 import PopupForm from "./Components/PopupForm";
 import ImmunoSuppression from "./Components/Infectious Disease/ImmunoSuppression/ImmunoSuppression";
@@ -116,6 +117,7 @@ function App() {
           <Route path="/services/advanced-Sequencing" element={<AdvancedSequencing />} />
           <Route path="/services/tandem-mass-spectrometry-tms" element={<Tms />} />
           <Route path="/services/modern-dna-panels" element={<ModernDNAPanel />} />
+          <Route path="/services/metabolomics-services" element={<MetabolomicsServices />} />
           <Route path="/contact" element={<ContactUs />} />
 
           <Route path="/services/infertility-genetics" element={<InfetilityGenetics />} />
