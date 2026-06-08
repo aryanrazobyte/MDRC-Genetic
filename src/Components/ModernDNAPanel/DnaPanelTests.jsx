@@ -39,8 +39,8 @@ export default function DnaPanelTests() {
   const [active, setActive] = useState(null);
 
   return (
-    <div className="bg-gray-100 font-roboto py-1 pb-10 px-4">
-      <h1 className="text-center text-[22px] py-5 font-semibold text-[#005C96]">
+    <div className="bg-gray-100 font-roboto py-1 pb-8 sm:pb-10 px-4 sm:px-6">
+      <h1 className="text-center text-lg sm:text-[22px] py-4 sm:py-5 font-semibold text-[#005C96] px-2">
         Modern DNA Panels Offered by MDRC
       </h1>
 

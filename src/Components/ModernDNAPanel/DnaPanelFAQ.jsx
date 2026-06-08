@@ -32,9 +32,9 @@ const DnaPanelFAQ = () => {
   };
 
   return (
-    <section className="w-full py-8 px-4 flex justify-center">
+    <section className="w-full py-6 sm:py-8 px-4 sm:px-6 flex justify-center">
       <div className="max-w-4xl w-full">
-        <h2 className="text-[28px] md:text-[32px] font-semibold text-gray-800 mb-10 text-center">
+        <h2 className="text-xl sm:text-[28px] md:text-[32px] font-semibold text-gray-800 mb-6 sm:mb-10 text-center">
           Frequently Asked Questions
         </h2>
 

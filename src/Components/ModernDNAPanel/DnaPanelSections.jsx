@@ -2,13 +2,13 @@ import React from "react";
 
 const DnaPanelSections = () => {
   return (
-    <div className="py-6 px-4 font-roboto">
+    <div className="py-6 sm:py-8 px-4 sm:px-6 font-roboto">
       <div className="max-w-6xl mx-auto text-gray-800">
-        <h2 className="text-3xl md:text-[25px] font-semibold mb-6">
+        <h2 className="text-xl sm:text-2xl md:text-[25px] font-semibold mb-4 sm:mb-6">
           Modern DNA Panels
         </h2>
 
-        <p className="text-base md:text-lg leading-7 md:leading-8 mb-10">
+        <p className="text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-8 sm:mb-10">
           While traditional diagnostics identify active disease states, genetic
           panels evaluate lifetime risk factors and inherited metabolic
           variations. This allows for proactive medical and lifestyle
@@ -16,17 +16,17 @@ const DnaPanelSections = () => {
         </p>
 
         {/* Section 1 */}
-        <h2 className="text-3xl md:text-[25px] font-semibold mb-6">
+        <h2 className="text-xl sm:text-2xl md:text-[25px] font-semibold mb-4 sm:mb-6">
           1. Lifestyle &amp; Metabolic Optimization Panels
         </h2>
 
-        <p className="text-base md:text-lg leading-7 md:leading-8 mb-6">
+        <p className="text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-4 sm:mb-6">
           These panels analyze genetic markers linked to nutrient metabolism,
           physical performance, and structural tissue integrity, providing a
           clear understanding of your baseline physiological needs.
         </p>
 
-        <div className="space-y-6 text-base md:text-lg leading-7 md:leading-8 mb-10">
+        <div className="space-y-5 sm:space-y-6 text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-8 sm:mb-10">
           <p>
             <span className="font-semibold text-[#005C96] text-lg md:text-xl">
               Modern DNA Wellness Test
@@ -93,18 +93,18 @@ const DnaPanelSections = () => {
         </div>
 
         {/* Section 2 */}
-        <h2 className="text-3xl md:text-[25px] font-semibold mb-6">
+        <h2 className="text-xl sm:text-2xl md:text-[25px] font-semibold mb-4 sm:mb-6">
           2. Cardiovascular &amp; Metabolic Risk Assessment
         </h2>
 
-        <p className="text-base md:text-lg leading-7 md:leading-8 mb-6">
+        <p className="text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-4 sm:mb-6">
           Genomics plays an essential role in predicting long-term
           cardiometabolic risks, especially given the high prevalence of
           metabolic syndrome and premature coronary artery disease within the
           Indian population.
         </p>
 
-        <div className="space-y-6 text-base md:text-lg leading-7 md:leading-8 mb-10">
+        <div className="space-y-5 sm:space-y-6 text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-8 sm:mb-10">
           <p>
             <span className="font-semibold text-[#005C96] text-lg md:text-xl">
               Modern-PRS Panel (Polygenic Risk Score)
@@ -138,11 +138,11 @@ const DnaPanelSections = () => {
         </div>
 
         {/* Section 3 */}
-        <h2 className="text-3xl md:text-[25px] font-semibold mb-6">
+        <h2 className="text-xl sm:text-2xl md:text-[25px] font-semibold mb-4 sm:mb-6">
           3. Organ Function, Immunology, &amp; Gender-Specific Panels
         </h2>
 
-        <div className="space-y-6 text-base md:text-lg leading-7 md:leading-8 mb-10">
+        <div className="space-y-5 sm:space-y-6 text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-8 sm:mb-10">
           <p>
             <span className="font-semibold text-[#005C96] text-lg md:text-xl">
               Modern DNA Kidney Test
@@ -195,16 +195,16 @@ const DnaPanelSections = () => {
         </div>
 
         {/* Section 4 */}
-        <h2 className="text-3xl md:text-[25px] font-semibold mb-6">
+        <h2 className="text-xl sm:text-2xl md:text-[25px] font-semibold mb-4 sm:mb-6">
           4. Cellular Ageing &amp; Longevity Profiles
         </h2>
 
-        <p className="text-base md:text-lg leading-7 md:leading-8 mb-6">
+        <p className="text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-4 sm:mb-6">
           These advanced molecular panels evaluate biological markers that
           reflect cellular age and chromosomal structural integrity over time.
         </p>
 
-        <div className="space-y-6 text-base md:text-lg leading-7 md:leading-8">
+        <div className="space-y-5 sm:space-y-6 text-sm sm:text-base md:text-lg leading-7 md:leading-8">
           <p>
             <span className="font-semibold text-[#005C96] text-lg md:text-xl">
               Modern EpiAge Test
