@@ -12,7 +12,7 @@ const logo =
       { label: "Modern DNA Panels", path: "/services/modern-dna-panels" },
       {
         label: "Metabolomics Services",
-        path: "/services/tandem-mass-spectrometry-tms",
+        path: "#",
         dropdown: [
           { label: "Methylation Status Analysis", path: "#" },
           { label: "Gut Microbiome Health Assessment Panel", path: "#" },

@@ -23,7 +23,7 @@ const ModernDNAPanel = () => {
 
             <div className="relative flex justify-center items-center w-full md:w-auto py-6 sm:py-8">
               <div className="relative w-[250px] h-[250px] sm:w-[290px] sm:h-[290px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px]">
-                <div className="absolute inset-0 rounded-full bg-white/60 blur-[40px] scale-110 pointer-events-none" />
+                <div className="absolute inset-0 rounded-full bg-white/20 blur-2xl" />
                 <div className="absolute inset-0 rounded-full bg-[#15AEE5]/50 blur-[28px] scale-105 pointer-events-none" />
                 <div className="overflow-hidden rounded-full w-full h-full border-[3px] sm:border-[1px] md:border-[1px] border-[#000000] shadow-[0_0_72px_28px_rgba(255,255,255,0.46)] box-border">
                   <img

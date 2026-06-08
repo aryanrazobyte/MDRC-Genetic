@@ -10,7 +10,7 @@ const Rare = () => {
         <div className="w-full md:w-1/2 order-1 md:order-2">
           
          <h2 className="hidden md:block text-2xl md:text-[25px] font-semibold text-white md:text-gray-800">
-  Metabolomics Services (TMS)
+  Tandem Mass Spectrometry  (TMS)
 </h2>
 
           <p className="text-white md:text-gray-600 text-base md:text-lg leading-relaxed mb-6">

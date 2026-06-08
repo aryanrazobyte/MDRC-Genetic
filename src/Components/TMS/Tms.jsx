@@ -29,7 +29,7 @@ const Tms = () => {
               </button>
 
               <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight">
-                Metabolomics Services <br /> (TMS)
+                Tandem Mass Spectrometry  <br /> (TMS)
               </h1>
             </div>
 
