@@ -9,7 +9,7 @@ const logo =
   const navLinks = [
       { label: "Home", path: "/" },
       { label: "About MDRC Genomics", path: "/about" },
-      { label: "Modern DNA Panels", path: "/" },
+      { label: "Modern DNA Panels", path: "/services/modern-dna-panels" },
       {
         label: "Longevity Panels",
         path: "/services/tandem-mass-spectrometry-tms",
