@@ -16,7 +16,7 @@ const logo =
         dropdown: [
           {
             label: "Longevity Panels",
-            path: "/services/tandem-mass-spectrometry-tms",
+            path: "#",
             dropdown: [
               { label: "Methylation Status Analysis", path: "#" },
               { label: "Gut Microbiome Health Assessment Panel", path: "#" },

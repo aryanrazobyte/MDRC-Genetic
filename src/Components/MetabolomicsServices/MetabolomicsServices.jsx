@@ -24,11 +24,11 @@ const MetabolomicsServices = () => {
               <div className="relative w-[210px] h-[210px] sm:w-[260px] sm:h-[260px] md:w-[320px] md:h-[320px] lg:w-[370px] lg:h-[370px]">
                 <div className="absolute inset-0 rounded-full bg-white/20 blur-2xl scale-110 pointer-events-none" />
                 <div className="absolute inset-0 rounded-full bg-[#15AEE5]/40 blur-[24px] sm:blur-[28px] scale-105 pointer-events-none" />
-                <div className="overflow-hidden rounded-full w-full h-full border-[3px] sm:border-[4px] md:border-[5px] border-[#000000] shadow-[0_0_48px_20px_rgba(255,255,255,0.35)] sm:shadow-[0_0_72px_28px_rgba(255,255,255,0.46)] box-border">
+                <div className="overflow-hidden rounded-full w-full h-full border-[3px] sm:border-[4px] md:border-[1px] border-[#000000] shadow-[0_0_48px_20px_rgba(255,255,255,0.35)] sm:shadow-[0_0_72px_28px_rgba(255,255,255,0.46)] box-border">
                   <img
-                    src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828050/vite-project/sg9b6bi3mhospqje1l0s.svg"
+                    src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1780916158/WhatsApp_Image_2026-06-08_at_16.24.54_l3f7is.jpg"
                     alt="Metabolomics Services"
-                    className="w-full h-full rounded-full object-cover object-center"
+                    className="w-full h-full rounded-full object-cover object-center brightness-75 contrast-110 saturate-110"
                   />
                 </div>
               </div>
