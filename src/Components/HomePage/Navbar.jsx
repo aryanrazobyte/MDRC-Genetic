@@ -12,7 +12,7 @@ const logo =
       { label: "Modern DNA Panels", path: "/" },
       {
         label: "Longevity Panels",
-        path: "#",
+        path: "/services/tandem-mass-spectrometry-tms",
         dropdown: [
           { label: "Methylation Status Analysis", path: "#" },
           { label: "Gut Microbiome Health Assessment Panel", path: "#" },
@@ -231,10 +231,20 @@ const logo =
                     </Link>
                   ) : (
                     <>
-                      <button className="flex items-center gap-1 whitespace-nowrap px-2 2xl:px-3 py-2 hover:text-primary">
+                      {link.label === "Longevity Panels" ? (
+                        <Link
+                          to={link.path}
+                          className="flex items-center gap-1 whitespace-nowrap px-2 2xl:px-3 py-2 hover:text-primary"
+                        >
+                          {link.label}
+                          <ChevronDown className="w-4 h-4" />
+                        </Link>
+                      ) : (
+                        <button className="flex items-center gap-1 whitespace-nowrap px-2 2xl:px-3 py-2 hover:text-primary">
                         {link.label}
                         <ChevronDown className="w-4 h-4" />
-                      </button>
+                        </button>
+                      )}
 
                       {/* Dropdown */}
                       <div
