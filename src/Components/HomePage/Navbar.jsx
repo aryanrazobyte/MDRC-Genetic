@@ -11,7 +11,7 @@ const logo =
       { label: "About MDRC Genomics", path: "/about" },
       { label: "Modern DNA Panels", path: "/services/modern-dna-panels" },
       {
-        label: "Longevity Panels",
+        label: "Metabolomics Services",
         path: "/services/tandem-mass-spectrometry-tms",
         dropdown: [
           { label: "Methylation Status Analysis", path: "#" },
@@ -232,7 +232,7 @@ const logo =
                     </Link>
                   ) : (
                     <>
-                      {link.label === "Longevity Panels" ? (
+                      {link.label === "Metabolomics Services" ? (
                         <Link
                           to={link.path}
                           className="flex items-center gap-1 whitespace-nowrap px-2 2xl:px-3 py-2 hover:text-primary"
@@ -263,7 +263,7 @@ const logo =
                           transition-all
                           duration-200
                           ${
-                            link.label === "Longevity Panels"
+                            link.label === "Metabolomics Services"
                               ? "w-96 max-h-[calc(100vh-9rem)] overflow-y-auto"
                               : "w-72"
                           }

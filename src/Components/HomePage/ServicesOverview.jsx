@@ -4,7 +4,7 @@ import { ArrowRight, Bug, Baby, Microscope, Dna, FlaskConical, Pill } from "luci
 const services = [
   {
     icon: Pill,
-    title: "Longevity Panels (TMS)",
+    title: "Metabolomics Services (TMS)",
     description: "LC-MS/MS (Liquid Chromatography–Tandem Mass Spectrometry) has become one of the most powerful analytical tools.",
     path: "/tandem-mass-spectrometry-tms",
   },
