@@ -3,7 +3,6 @@ import CarrierScreeningCytogenetic from "./CarrierScreeningCytogenetic";
 import CarrierScreeningInfoSection from "./CarrierScreeningInfoSection";
 import CarrierScreeningWhyChoose from "./CarrierScreeningWhyChoose";
 import FAQ from "../../HomePage/FAQ";
-import BlogSection from "../../HomePage/Blog";
 
 
 const InfertilityGenetics = () => {
@@ -58,7 +57,6 @@ const InfertilityGenetics = () => {
    <CarrierScreeningInfoSection/>
    <CarrierScreeningWhyChoose/>
    <FAQ/>
-   <BlogSection/>
     </>
   );
 };

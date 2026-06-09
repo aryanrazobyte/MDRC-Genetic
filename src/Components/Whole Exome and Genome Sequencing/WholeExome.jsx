@@ -1,6 +1,5 @@
 import React from "react";
 
-import BlogSection from "../HomePage/Blog";
 import FAQ from "../HomePage/FAQ";
 import Rare from "./Whole";
 import RareServices from "./WholeServices";
@@ -58,7 +57,6 @@ Genome Sequencing
  <Rare/>
  <RareServices/>
     <WholFAQ/>
-    <BlogSection/>
     </>
   );
 };

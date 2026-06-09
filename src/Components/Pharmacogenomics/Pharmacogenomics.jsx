@@ -1,15 +1,13 @@
 import React from "react";
 // import Disease from "./Disease";
 // import GeneticServices from "./GeneticServices";
-import BlogSection from "../HomePage/Blog";
 import PharmacogenomicsAQ from "./PharmacogenomicsAQ";
 import PharmacogenomicsServices from "./PharmacogenomicsServices";
 import Pharma from "./Pharma";
 // import ReproductivePregnancy from "./ReproductivePregnancy";
 // import GeneticServices from "./GeneticServices";
 // import FAQ from "../HomePage/FAQ";
-// import BlogSection from "../HomePage/Blog";
-
+// 
 const Pharmacogenomics = () => {
   return (
     <>
@@ -62,7 +60,6 @@ const Pharmacogenomics = () => {
     <Pharma/>
     <PharmacogenomicsServices/>
     <PharmacogenomicsAQ/>
-    <BlogSection/>
     </>
   );
 };

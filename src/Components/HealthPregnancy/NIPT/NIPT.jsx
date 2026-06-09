@@ -3,7 +3,6 @@ import NIPTCytogenetic from "./NIPTCytogenetic";
 import NIPTInfoSection from "./NIPTInfoSection";
 import NIPTWhyChoose from "./NIPTWhyChoose";
 import FAQ from "../../HomePage/FAQ";
-import BlogSection from "../../HomePage/Blog";
 
 
 const InfertilityGenetics = () => {
@@ -60,7 +59,6 @@ Testing (NIPT)
    <NIPTInfoSection/>
    <NIPTWhyChoose/>
    <FAQ/>
-   <BlogSection/>
     </>
   );
 };

@@ -19,6 +19,7 @@ import AdvancedSequencing from "./Components/AdvancedSequencing/AdvancedSequenci
 import InfetilityGenetics from "./Components/HealthPregnancy/InfertilityGenetics/InfertilityGenetics";
 import CarrierScreening from "./Components/HealthPregnancy/CarrierScreening/CarrierScreening";
 import NIPT from "./Components/HealthPregnancy/NIPT/NIPT";
+import Microarray from "./Components/HealthPregnancy/Microarray/Microarray";
 import NewbornScreening from "./Components/HealthPregnancy/NewbornScreening/NewbornScreening";
 import Tms from "./Components/TMS/Tms";
 import ModernDNAPanel from "./Components/ModernDNAPanel/ModernDNAPanel";
@@ -123,6 +124,7 @@ function App() {
           <Route path="/services/infertility-genetics" element={<InfetilityGenetics />} />
           <Route path="/services/carrier-screening" element={<CarrierScreening />} />
           <Route path="/reproductive-health-pregnancy/services/nipt" element={<NIPT />} />
+          <Route path="/reproductive-health-pregnancy/services/microarray" element={<Microarray />} />
           <Route path="/reproductive-health-pregnancy/newbornscreening" element={<NewbornScreening />} />
 
           <Route path="/service/gastro" element={<SpectrumofInfectiousDiseases />} />

@@ -1,6 +1,5 @@
 import React from "react";
 
-import BlogSection from "../HomePage/Blog";
 import FAQ from "../HomePage/FAQ";
 import Rare from "./Rare";
 import RareServices from "./RareServices";
@@ -57,7 +56,6 @@ const RarePanel = () => {
  <Rare/>
  <RareServices/>
     <RareFAQ/>
-    <BlogSection/>
     </>
   );
 };

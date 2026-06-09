@@ -3,7 +3,6 @@ import NewbornScreeningCytogenetic from "./NewbornScreeningCytogenetic";
 import NewbornScreeningInfoSection from "./NewbornScreeningInfoSection";
 import NewbornScreeningWhyChoose from "./NewbornScreeningWhyChoose";
 import FAQ from "../../HomePage/FAQ";
-import BlogSection from "../../HomePage/Blog";
 
 
 const InfertilityGenetics = () => {
@@ -60,7 +59,6 @@ const InfertilityGenetics = () => {
    <NewbornScreeningInfoSection/>
    <NewbornScreeningWhyChoose/>
    <FAQ/>
-   <BlogSection/>
     </>
   );
 };

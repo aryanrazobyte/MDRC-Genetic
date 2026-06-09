@@ -6,7 +6,6 @@ import MetabolomicsPanels from "./MetabolomicsPanels";
 import MetabolomicsTmsLink from "./MetabolomicsTmsLink";
 import MetabolomicsFAQ from "./MetabolomicsFAQ";
 import PromoBanner from "../HealthPregnancy/InfertilityGenetics/PromoBanner";
-import Blog from "../HomePage/Blog";
 
 const MetabolomicsServices = () => {
   return (
@@ -44,7 +43,6 @@ const MetabolomicsServices = () => {
       <MetabolomicsTmsLink />
       <PromoBanner />
       <MetabolomicsFAQ />
-      <Blog />
     </>
   );
 };

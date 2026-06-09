@@ -1,7 +1,6 @@
 import React from "react";
 // import Disease from "./Disease";
 // import GeneticServices from "./GeneticServices";
-import BlogSection from "../HomePage/Blog";
 import FAQ from "../HomePage/FAQ"
 import Cytogenetic from "./Cytogenetic";
 import Services from "./Services";
@@ -56,7 +55,6 @@ const CytogeneticandFISH = () => {
   <Cytogenetic/>
   <Services/>
     <CytogeneticFAQ/>
-    <BlogSection/>
     </>
   );
 };

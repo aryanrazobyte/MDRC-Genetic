@@ -7,7 +7,6 @@ import HowItWorks from "./HowItWorks";
 import ClinicalActionability from "./ClinicalActionability";
 import PromoBanner from "../HealthPregnancy/InfertilityGenetics/PromoBanner";
 import DnaPanelFAQ from "./DnaPanelFAQ";
-import Blog from "../HomePage/Blog";
 
 const ModernDNAPanel = () => {
   return (
@@ -46,7 +45,6 @@ const ModernDNAPanel = () => {
       <ClinicalActionability />
       <PromoBanner />
       <DnaPanelFAQ />
-      <Blog />
     </>
   );
 };

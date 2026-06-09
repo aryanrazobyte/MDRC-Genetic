@@ -1,7 +1,6 @@
 import React from "react";
 // import Disease from "./Disease";
 // import GeneticServices from "./";
-import BlogSection from "../HomePage/Blog";
 import PharmacogenomicsAQ from "./AdvanceFAQ";
 import AdvanceServices from "./AdvanceServices";
 import Pharma from "./Advance";
@@ -53,7 +52,6 @@ const AdvancedSequencing = () => {
     <AdvanceServices/>
    
     <AdvanceFAQ/>
-    <BlogSection/>
     </>
   );
 };

@@ -2,7 +2,6 @@ import React from "react";
 import ReproductivePregnancy from "./ReproductivePregnancy";
 import GeneticServices from "./GeneticServices";
 import FAQ from "../HomePage/FAQ";
-import BlogSection from "../HomePage/Blog";
 import ReproductiveFAQ from "./ReproductiveFAQ";
 
 const HealthPregnancyy = () => {
@@ -55,7 +54,6 @@ const HealthPregnancyy = () => {
     <ReproductivePregnancy/>
     <GeneticServices/>
     <ReproductiveFAQ/>
-    <BlogSection/>
     </>
   );
 };

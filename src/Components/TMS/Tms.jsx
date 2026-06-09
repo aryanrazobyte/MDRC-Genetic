@@ -3,7 +3,6 @@ import React from "react";
 import TandemMass from "./TandemMass";
 import LCMSSection from "./LCMSSection";
 import TestPanel from "./TestPanel";
-import Blog from "../HomePage/Blog";
 import PromoBanner from "../HealthPregnancy/InfertilityGenetics/PromoBanner";
 import FAQ from "../HomePage/FAQ";
 
@@ -63,7 +62,6 @@ const Tms = () => {
       <TestPanel />
       <PromoBanner />
       <FAQ />
-      <Blog />
     </>
   );
 };

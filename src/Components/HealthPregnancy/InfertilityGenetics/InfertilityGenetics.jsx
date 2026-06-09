@@ -5,7 +5,6 @@ import PromoBanner from "./PromoBanner";
 import InfoSection from "./InfoSection";
 import WhyChoose from "./WhyChoose";
 import FAQ from "../../HomePage/FAQ";
-import BlogSection from "../../HomePage/Blog";
 
 
 const InfertilityGenetics = () => {
@@ -60,7 +59,6 @@ const InfertilityGenetics = () => {
    <WhyChoose/>
    <PromoBanner/>
    <FAQ/>
-   <BlogSection/>
     </>
   );
 };

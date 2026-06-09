@@ -94,7 +94,7 @@ const logo =
               { label: "Carrier Screening", path: "/services/carrier-screening" },
               { label: "Non-Invasive Prenatal Testing (NIPT)", path: "/reproductive-health-pregnancy/services/nipt" },
               { label: "Newborn Screening", path: "/reproductive-health-pregnancy/newbornscreening" },
-              { label: "Microarray", path: "/" },
+              { label: "Microarray", path: "/reproductive-health-pregnancy/services/microarray" },
               
             ],
           },

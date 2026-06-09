@@ -1,14 +1,12 @@
 import React from "react";
 import Disease from "./Disease";
 import GeneticServices from "./GeneticServices";
-import BlogSection from "../HomePage/Blog"
 import DiseaseFAQ from "./DiseaseFAQ";
 import PromoBanner from "../../Components/HealthPregnancy/InfertilityGenetics/PromoBanner";
 // import ReproductivePregnancy from "./ReproductivePregnancy";
 // import GeneticServices from "./GeneticServices";
 // import FAQ from "../HomePage/FAQ";
-// import BlogSection from "../HomePage/Blog";
-
+// 
 const InfectiousDisease = () => {
   return (
     <>
@@ -67,7 +65,6 @@ const InfectiousDisease = () => {
     <GeneticServices/>
     <PromoBanner/>
     <DiseaseFAQ/>
-    <BlogSection/>
     </>
   );
 };

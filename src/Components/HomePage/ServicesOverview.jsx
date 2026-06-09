@@ -22,7 +22,7 @@ const services = [
   },
   {
     icon: Microscope,
-    title: "Cyto Genetic & FISH",
+    title: "Cytogenetics & FISH",
     description: "Chromosome analysis and fluorescence in situ hybridization for detecting structural abnormalities.",
     path: "/cyto-genetic-and-fish",
   },
