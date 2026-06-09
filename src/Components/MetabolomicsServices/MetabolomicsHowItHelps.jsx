@@ -40,7 +40,7 @@ const MetabolomicsHowItHelps = () => {
           <div className="absolute -inset-3 rounded-[30px] bg-gradient-to-br from-[#dff5fc] to-[#e7f0f8]" />
           <div className="relative overflow-hidden rounded-3xl border border-[#cce9f4] bg-[#eef8fc] shadow-[0_18px_50px_rgba(0,92,150,0.16)]">
             <img
-              src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1780984385/metabolomics-how-it-helps_fv4hcy.png"
+              src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1780985533/doctorfds_nomivs.png"
               alt="Metabolomics laboratory analysis showing cellular energy and molecular pathways"
               className="h-[280px] w-full object-cover sm:h-[360px] lg:h-[470px]"
               loading="lazy"
