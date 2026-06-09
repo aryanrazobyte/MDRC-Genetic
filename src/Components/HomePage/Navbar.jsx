@@ -19,12 +19,17 @@ const logo =
             path: "#",
             dropdown: [
               { label: "Methylation Status Analysis", path: "#" },
-              { label: "Gut Microbiome Health Assessment Panel", path: "#" },
               { label: "Omega-3 : Omega-6 Fatty Acid Ratio", path: "#" },
               { label: "NAD+ / NADH Ratio", path: "#" },
               { label: "GSH / GSSG Ratio", path: "#" },
             ],
           },
+
+          {
+            label: "Gut Microbiome Health Assessment Panel",
+            path: "#",
+          },
+
           
           {
             label: "Neurotransmitter and Catecholamine Assessment",
