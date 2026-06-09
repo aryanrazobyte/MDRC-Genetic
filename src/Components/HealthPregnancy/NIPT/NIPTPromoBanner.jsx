@@ -1,24 +1,34 @@
-export default function NIPTPromoBanner() {
-  return (
-    <div className="w-full flex justify-center bg-gray-100 py-6 font-roboto">
-      
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4 
-        bg-gradient-to-r from-[#05AF79] via-[#06c48a] to-[#04a56f]
-        text-white rounded-2xl px-6 md:px-10 py-5 w-full max-w-5xl 
-        shadow-lg shadow-green-500/20">
-        
-        {/* Text */}
-        <p className="text-sm md:text-lg font-medium text-center md:text-left leading-relaxed">
-          Secure your consultation and genetic evaluation to optimize fertility management.
-        </p>
+import React, { useState } from "react";
+import PopupForm from "../../PopupForm";
 
-        {/* Button */}
-        <button className="bg-white text-[#05AF79] font-semibold px-6 py-2.5 rounded-lg 
-          shadow hover:bg-gray-100 hover:scale-105 transition duration-200">
-          Book Your Test
-        </button>
-        
+export default function NIPTPromoBanner() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <div className="w-full flex justify-center bg-gray-100 py-6 font-roboto px-4">
+        <div
+          className="flex flex-col md:flex-row items-center justify-between gap-4 
+          bg-gradient-to-r from-[#05AF79] via-[#06c48a] to-[#04a56f]
+          text-white rounded-2xl px-6 md:px-10 py-5 w-full max-w-5xl 
+          shadow-lg shadow-green-500/20"
+        >
+          <p className="text-sm md:text-lg font-medium text-center md:text-left leading-relaxed">
+            Book your EVAA Non-Invasive Prenatal Screening at MDRC — safe,
+            accurate, and trusted prenatal care.
+          </p>
+
+          <button
+            onClick={() => setOpen(true)}
+            className="bg-white text-[#05AF79] font-semibold px-6 py-2.5 rounded-lg 
+            shadow hover:bg-gray-100 hover:scale-105 transition duration-200 whitespace-nowrap"
+          >
+            Book Your Test
+          </button>
+        </div>
       </div>
-    </div>
+
+      {open && <PopupForm isOpen={open} onClose={() => setOpen(false)} />}
+    </>
   );
 }

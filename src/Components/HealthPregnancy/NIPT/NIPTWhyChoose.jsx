@@ -1,63 +1,43 @@
 import React from "react";
 import PromoBanner from "./NIPTPromoBanner";
 
+const reasons = [
+  "CAP and NABL accredited assays",
+  "Clinically validated test",
+  "Validated for twins, egg donors and surrogacy",
+  "Reporting done with Bio-informatics pipeline of Yourgene Bioscience",
+];
+
 const NIPTWhyChoose = () => {
   return (
     <>
-    <section className="bg-gray-100 py-14 px-4 md:px-10 font-roboto">
-      
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        
-        {/* LEFT CONTENT */}
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-snug">
-            Why Choose MDRC for Infertility Genetics
-          </h2>
-
-          <ul className="space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
-            
-            <li className="flex items-start gap-3">
-              <span className="text-green-500 mt-1 text-xl">•</span>
-              <p>High-precision laboratory with next-generation sequencing capabilities.
-</p>
-            </li>
-
-            <li className="flex items-start gap-3">
-              <span className="text-green-500 mt-1 text-xl">•</span>
-              <p>Experienced geneticists and prenatal specialists interpreting results.
-</p>
-            </li>
-
-            <li className="flex items-start gap-3">
-              <span className="text-green-500 mt-1 text-xl">•</span>
-              <p>Safe, non-invasive testing with rapid turnaround times.
-
-</p>
-            </li>
-
-            <li className="flex items-start gap-3">
-              <span className="text-green-500 mt-1 text-xl">•</span>
-              <p>Personalized counseling and guidance based on results.
-</p>
-            </li>
-
-          </ul>
-        </div>
-
-        {/* RIGHT IMAGE */}
-        <div className="flex justify-center md:justify-end">
+      <section className="bg-white py-10 sm:py-14 px-4 sm:px-6 md:px-10 font-roboto">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-5 sm:mb-6 leading-snug">
+              Why Choose EVAA?
+            </h2>
+
+            <ul className="space-y-3 sm:space-y-4 text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
+              {reasons.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span className="text-green-500 mt-1 shrink-0 text-lg">•</span>
+                  <p>{item}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="flex justify-center md:justify-end">
             <img
               src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827894/vite-project/yb0dkzfhcyczjpkit5n1.svg"
-              alt="Infertility Genetics"
+              alt="Why Choose EVAA"
               className="w-full max-w-md scale-x-[-1]"
             />
           </div>
         </div>
-
-      </div>
-    </section>
-    <PromoBanner/>
+      </section>
+      <PromoBanner />
     </>
   );
 };

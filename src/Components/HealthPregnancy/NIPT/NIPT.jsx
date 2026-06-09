@@ -1,66 +1,50 @@
 import React from "react";
 import NIPTCytogenetic from "./NIPTCytogenetic";
+import NIPTScreenFor from "./NIPTScreenFor";
+import NIPTAdvantages from "./NIPTAdvantages";
 import NIPTInfoSection from "./NIPTInfoSection";
 import NIPTWhyChoose from "./NIPTWhyChoose";
-import FAQ from "../../HomePage/FAQ";
+import NIPTFAQ from "./NIPTFAQ";
 
-
-const InfertilityGenetics = () => {
+const NIPT = () => {
   return (
     <>
-    <div className="font-roboto">
-      <section className="relative overflow-hidden text-white bg-gradient-to-b from-[#005E91] to-[#0C759A] pt-10">
-        <div className="max-w-7xl mx-auto px-4 md:px-10 py-12 md:py-20 flex flex-col md:flex-row items-center justify-between gap-8">
-          
-          <div className="text-white text-center md:text-left">
-            <button
-              onClick={() => window.location.href = "/"}
-              className="flex items-center justify-center md:justify-start gap-2 text-xl mb-4"
-            >
-              ← Back to Home
-            </button>
-
-            <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight">
-             Non-Invasive Prenatal
-Testing (NIPT)
-              <br />
-              
-            </h1>
-
-            {/* <p className="mt-4 text-sm sm:text-base md:text-xl opacity-90 max-w-xl">
-              Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to
-              make a type specimen book. It has survived not only five
-              centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged.
-            </p> */}
-          </div>
-
-          <div className="relative flex justify-center items-center">
-            <div className="overflow-hidden">
-              <img
-                src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828054/vite-project/x37csmszlwzms69b44yo.svg"
-                alt="About"
-                className="rounded-full mt-11 lg:mt-0"
-              />
+      <div className="font-roboto">
+        <section className="relative overflow-hidden text-white bg-gradient-to-b from-[#005E91] to-[#0C759A] pt-16 md:pt-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-10 sm:py-14 md:py-16 lg:py-20 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10">
+            <div className="text-white text-center md:text-left w-full md:w-1/2">
+              <p className="text-[#15AEE5] font-medium text-sm sm:text-base mb-2">
+                Where Quality Meets Care
+              </p>
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                EVAA Non-Invasive <br className="hidden sm:block" /> Prenatal
+                Screening
+              </h1>
             </div>
-            <div className="absolute inset-0 rounded-full bg-white/20 blur-2xl"></div>
-          </div>
-        </div>
-      </section>
 
-     
-    </div>
-   {/* <CarrierScreeningCytogenetic/> */}
-   <NIPTCytogenetic/>
-   {/* <InfoSection/> */}
-   <NIPTInfoSection/>
-   <NIPTWhyChoose/>
-   <FAQ/>
+            <div className="relative flex justify-center items-center w-full md:w-auto py-4 sm:py-6">
+              <div className="overflow-hidden">
+                <img
+                  src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828054/vite-project/x37csmszlwzms69b44yo.svg"
+                  alt="EVAA Prenatal Screening"
+                  className="rounded-full w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[320px] md:h-[320px] object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 rounded-full bg-white/20 blur-2xl pointer-events-none" />
+            </div>
+          </div>
+        </section>
+
+        <NIPTCytogenetic />
+      </div>
+
+      <NIPTScreenFor />
+      <NIPTAdvantages />
+      <NIPTInfoSection />
+      <NIPTWhyChoose />
+      <NIPTFAQ />
     </>
   );
 };
 
-export default InfertilityGenetics;
+export default NIPT;
