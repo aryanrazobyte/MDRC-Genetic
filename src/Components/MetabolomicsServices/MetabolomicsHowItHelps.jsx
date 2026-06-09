@@ -11,30 +11,44 @@ const benefits = [
 
 const MetabolomicsHowItHelps = () => {
   return (
-    <div className="py-6 sm:py-8 px-4 sm:px-6 font-roboto bg-white">
-      <div className="max-w-6xl mx-auto text-gray-800">
-        <h2 className="text-lg sm:text-xl md:text-[25px] font-semibold mb-4 sm:mb-6 text-center md:text-left">
-          How Can It Help?
-        </h2>
+    <section className="bg-white px-4 py-10 font-roboto sm:px-6 sm:py-14">
+      <div className="mx-auto grid max-w-6xl items-center gap-9 text-gray-800 lg:grid-cols-[minmax(0,1fr)_minmax(380px,0.9fr)] lg:gap-14">
+        <div>
+          <h2 className="mb-6 text-center text-xl font-semibold sm:text-2xl lg:text-left lg:text-[28px]">
+            How Can It Help?
+          </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 text-sm sm:text-base md:text-lg leading-relaxed sm:leading-7 mb-8 sm:mb-10">
-          {benefits.map((item, index) => (
-            <p key={index} className="flex gap-2">
-              <span className="font-semibold text-[#005C96] shrink-0">
-                {index + 1}.
-              </span>
-              <span>{item}</span>
-            </p>
-          ))}
+          <ol className="space-y-4 text-sm leading-relaxed sm:text-base sm:leading-7 lg:text-[17px]">
+            {benefits.map((item, index) => (
+              <li key={item} className="flex items-start gap-3">
+                <span className="min-w-7 font-semibold text-[#005C96]">
+                  {index + 1}.
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ol>
+
+          <p className="mt-7 text-sm leading-relaxed text-gray-700 sm:text-base sm:leading-7">
+            Advanced LC-MS/MS technology enables the simultaneous quantification
+            of multiple metabolites, supporting precise clinical diagnosis and
+            personalised healthcare.
+          </p>
         </div>
 
-        <p className="text-sm sm:text-base md:text-lg leading-relaxed sm:leading-7 md:leading-8 text-gray-700 text-center md:text-left">
-          Advanced LC-MS/MS technology enables the simultaneous quantification
-          of multiple metabolites, supporting precise clinical diagnosis and
-          personalised healthcare.
-        </p>
+        <div className="relative mx-auto w-full max-w-xl lg:max-w-none">
+          <div className="absolute -inset-3 rounded-[30px] bg-gradient-to-br from-[#dff5fc] to-[#e7f0f8]" />
+          <div className="relative overflow-hidden rounded-3xl border border-[#cce9f4] bg-[#eef8fc] shadow-[0_18px_50px_rgba(0,92,150,0.16)]">
+            <img
+              src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1780984385/metabolomics-how-it-helps_fv4hcy.png"
+              alt="Metabolomics laboratory analysis showing cellular energy and molecular pathways"
+              className="h-[280px] w-full object-cover sm:h-[360px] lg:h-[470px]"
+              loading="lazy"
+            />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
