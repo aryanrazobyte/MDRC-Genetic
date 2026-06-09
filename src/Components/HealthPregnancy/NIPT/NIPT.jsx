@@ -14,11 +14,11 @@ const NIPT = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-10 sm:py-14 md:py-16 lg:py-20 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10">
             <div className="text-white text-center md:text-left w-full md:w-1/2">
               <p className="text-[#15AEE5] font-medium text-sm sm:text-base mb-2">
-                Where Quality Meets Care
+                Advanced Prenatal Genetic Screening for a Healthier Pregnancy
               </p>
               <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                EVAA Non-Invasive <br className="hidden sm:block" /> Prenatal
-                Screening
+                EVAA™ Non-Invasive <br className="hidden sm:block" /> Prenatal
+                Screening (NIPS)
               </h1>
             </div>
 

@@ -9,13 +9,13 @@ export default function CarrierScreeningPromoBanner() {
         
         {/* Text */}
         <p className="text-sm md:text-lg font-medium text-center md:text-left leading-relaxed">
-          Secure your consultation and genetic evaluation to optimize fertility management.
+          Have questions about our advanced DNA panels or need assistance choosing the right genetic test?
         </p>
 
         {/* Button */}
         <button className="bg-white text-[#05AF79] font-semibold px-6 py-2.5 rounded-lg 
           shadow hover:bg-gray-100 hover:scale-105 transition duration-200">
-          Book Your Test
+          Enquire Now
         </button>
         
       </div>

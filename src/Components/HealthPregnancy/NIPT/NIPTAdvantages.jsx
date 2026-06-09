@@ -5,24 +5,33 @@ const advantages = [
   {
     icon: Shield,
     title: "Safe",
-    description:
-      "Non-invasive with no risk of miscarriage.",
+    points: [
+      "Completely non-invasive test",
+      "Requires only a maternal blood sample",
+      "No risk of miscarriage or pregnancy complications",
+    ],
     image:
       "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827894/vite-project/yb0dkzfhcyczjpkit5n1.svg",
   },
   {
     icon: Target,
-    title: "Accurate",
-    description:
-      "More than 99% detection rate for autosomal trisomy conditions, with a false positive rate of less than 1%.",
+    title: "Highly Accurate",
+    points: [
+      "Greater than 99% detection rate for common autosomal trisomies",
+      "False positive rate below 1%",
+      "Superior performance compared to conventional prenatal screening",
+    ],
     image:
       "/assets/male-doctor-looking-virtual-dna-coming-out-tablet-gray-wall 1 (6).svg",
   },
   {
     icon: Droplets,
-    title: "Simple",
-    description:
-      "Uses just one maternal blood sample of 10 ml, with a low sample re-draw rate of less than 1%.",
+    title: "Simple and Convenient",
+    points: [
+      "Requires only 10 ml maternal blood sample",
+      "Low sample redraw rate (<1%)",
+      "Easy sample collection process",
+    ],
     image:
       "/assets/lab-technicians-talking-video-call-with-professional-chemist-doctor-explaning-vaccine-reactions 1.svg",
   },
@@ -33,7 +42,7 @@ const NIPTAdvantages = () => {
     <section className="bg-white py-10 sm:py-12 px-4 sm:px-6 font-roboto">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-xl sm:text-2xl md:text-[25px] font-semibold text-gray-800 mb-8 text-center">
-          Advantages of EVAA Prenatal Screening
+          Why Choose EVAA™ Prenatal Screening?
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
@@ -53,7 +62,7 @@ const NIPTAdvantages = () => {
                 </div>
 
                 <div className="p-5 sm:p-6">
-                  <div className="flex items-center gap-3 mb-3">
+                  <div className="flex items-center gap-3 mb-4">
                     <div
                       className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
                       style={{
@@ -67,9 +76,17 @@ const NIPTAdvantages = () => {
                       {item.title}
                     </h3>
                   </div>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    {item.description}
-                  </p>
+                  <ul className="space-y-2">
+                    {item.points.map((point) => (
+                      <li
+                        key={point}
+                        className="flex items-start gap-2 text-sm sm:text-base text-gray-600 leading-relaxed"
+                      >
+                        <span className="text-green-500 shrink-0">•</span>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             );

@@ -7,22 +7,45 @@ const NIPTCytogenetic = () => {
         <div className="w-full md:w-1/2 order-2 md:order-1">
           <img
             src="/assets/male-doctor-looking-virtual-dna-coming-out-tablet-gray-wall 1 (7).svg"
-            alt="EVAA Prenatal Screening"
+            alt="EVAA NIPS"
             className="w-full max-w-md mx-auto scale-x-[-1]"
           />
         </div>
 
         <div className="w-full md:w-1/2 order-1 md:order-2 text-center md:text-left">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white md:text-gray-800 mb-4">
-            Advanced Non-Invasive Prenatal Screening
-          </h2>
-
+          <p className="text-white md:text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-5">
+            EVAA™ Prenatal Screening is an advanced Non-Invasive Prenatal
+            Screening (NIPS) test that assesses the risk of chromosomal
+            abnormalities in a developing fetus using a simple maternal blood
+            sample. This highly accurate screening method analyzes fetal DNA
+            circulating in the mother&apos;s bloodstream, providing reliable
+            insights into common chromosomal disorders without posing any risk to
+            the pregnancy.
+          </p>
           <p className="text-white md:text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
-            EVAA prenatal screening is a non-invasive prenatal test for
-            pregnant women that estimates the risk of the fetus having
-            Down&apos;s syndrome and other aneuploidy-based genetic diseases.
-            This test is more accurate and sensitive than any other available
-            screening assays.
+            Recognized as one of the most sensitive prenatal screening
+            technologies available today, EVAA™ helps expectant parents and
+            healthcare providers make informed decisions with greater confidence.
+          </p>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 mt-8 md:mt-12">
+        <div className="bg-white/10 md:bg-gray-50 rounded-xl p-5 sm:p-6 md:p-8 border border-white/20 md:border-gray-100">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white md:text-gray-800 mb-4">
+            What is Non-Invasive Prenatal Screening (NIPS)?
+          </h2>
+          <p className="text-white/90 md:text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4">
+            Non-Invasive Prenatal Screening (NIPS) is a DNA-based screening test
+            that evaluates cell-free fetal DNA (cfDNA) present in maternal
+            blood. The test estimates the likelihood of chromosomal abnormalities
+            in the fetus, offering significantly higher accuracy compared to
+            conventional maternal serum screening methods.
+          </p>
+          <p className="text-white/90 md:text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
+            Unlike invasive procedures such as amniocentesis or chorionic villus
+            sampling (CVS), NIPS requires only a maternal blood sample and
+            carries no risk of miscarriage.
           </p>
         </div>
       </div>

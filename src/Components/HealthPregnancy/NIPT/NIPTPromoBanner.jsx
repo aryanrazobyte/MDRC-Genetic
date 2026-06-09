@@ -14,8 +14,7 @@ export default function NIPTPromoBanner() {
           shadow-lg shadow-green-500/20"
         >
           <p className="text-sm md:text-lg font-medium text-center md:text-left leading-relaxed">
-            Book your EVAA Non-Invasive Prenatal Screening at MDRC — safe,
-            accurate, and trusted prenatal care.
+            Have questions about our advanced DNA panels or need assistance choosing the right genetic test?
           </p>
 
           <button
@@ -23,7 +22,7 @@ export default function NIPTPromoBanner() {
             className="bg-white text-[#05AF79] font-semibold px-6 py-2.5 rounded-lg 
             shadow hover:bg-gray-100 hover:scale-105 transition duration-200 whitespace-nowrap"
           >
-            Book Your Test
+           Enquire Now
           </button>
         </div>
       </div>
