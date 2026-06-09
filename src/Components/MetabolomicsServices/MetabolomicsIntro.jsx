@@ -42,7 +42,7 @@ const MetabolomicsIntro = () => {
               }}
             >
               <img
-                src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1780998093/Untitled_design_2_tre2bz.png"
+                src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1781001148/genetic_kopipa.png"
                 alt="Metabolomics Services"
                 className="w-full h-auto object-cover transition-transform duration-700 ease-out md:group-hover:scale-105"
               />
