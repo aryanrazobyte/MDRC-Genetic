@@ -135,33 +135,69 @@ className="h-32 md:h-35 mb-1 object-contain"
           <div>
             <h4 className="text-xl font-semibold mb-4">Genomic Services</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/services/tandem-mass-spectrometry-tms" className="hover:text-green-300">Tandem Mass Spectrometry</Link></li>
+              <li><Link to="/services/oncologygenomics" className="hover:text-green-300">Oncology</Link></li>
               <li><Link to="/services/infectious-Disease" className="hover:text-green-300">Infectious Disease</Link></li>
-              <li><Link to="/services/reproductive-health-pregnancy" className="hover:text-green-300">Reproductive Health & Pregnancy</Link></li>
-              <li><Link to="/services/cyto-genetic-and-fish" className="hover:text-green-300">Cytogenetics & FISH</Link></li>
-              <li><Link to="/services/rare-nGS-panel" className="hover:text-green-300">Rare NGC Panel</Link></li>
-              <li><Link to="/services/whole-exome-and-genome-Sequencing" className="hover:text-green-300">Whole Exome & Genome</Link></li>
               <li><Link to="/services/pharmacogenomics" className="hover:text-green-300">Pharmacogenomics</Link></li>
-              <li><Link to="/services/advanced-sequencing" className="hover:text-green-300">Advanced Sequencing</Link></li>
-              <li><Link to="/services/oncologygenomics" className="hover:text-green-300">Oncogenomics</Link></li>
+              <li><Link to="/services/cyto-genetic-and-fish" className="hover:text-green-300">Cytogenetic and FISH</Link></li>
+              <li><Link to="/services/advanced-Sequencing" className="hover:text-green-300">Advanced Sequencing</Link></li>
+              <li><Link to="/services/rare-nGS-panel" className="hover:text-green-300">Rare Diseases NGS panel</Link></li>
+              <li><Link to="/services/reproductive-health-pregnancy" className="hover:text-green-300">Reproductive Health & Pregnancy</Link></li>
+              <li><Link to="/services/whole-exome-and-genome-Sequencing" className="hover:text-green-300">Whole Exome and Genome Sequencing</Link></li>
+              
             </ul>
           </div>
 
-          {/* QUICK LINKS */}
+          {/* OTHER LINKS & QUICK LINKS */}
           <div>
             <h4 className="text-xl font-semibold mb-4">Other Links</h4>
-            <li className="list-none"><Link to="/service/oncogeneticsdisorders" className="hover:text-green-300">Oncogenetics</Link></li>
+            <ul className="space-y-2 text-sm mb-8">
+              <li>
+                <Link
+                  to="/service/oncogeneticsdisorders"
+                  className="hover:text-green-300"
+                >
+                  Oncogenetics
+                </Link>
+              </li>
+            
+            <li>
+                <Link
+                  to="/services/modern-dna-panels"
+                  className="hover:text-green-300"
+                >
+                  Modern Dna panels
+                </Link>
+              </li>
+              <li><Link to="/services/tandem-mass-spectrometry-tms" className="hover:text-green-300">Tandem Mass Spectrometry</Link></li>
+            </ul>
 
+            <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/" className="hover:text-green-300">
+                  Home
+                </Link>
+              </li>
+               
+              <li>
+                <Link to="/about" className="hover:text-green-300">
+                  About
+                </Link>
+              </li>
 
-
-
-
-
-            {/* <ul className="space-y-2 text-sm">
-              <li><Link to="/about" className="hover:text-green-300">About</Link></li>
-              <li><Link to="/blogs" className="hover:text-green-300">Blog</Link></li>
-              <li><Link to="/contact" className="hover:text-green-300">Contact Us</Link></li>
-            </ul> */}
+                <li>
+                <Link to="/blogs" className="hover:text-green-300">
+                  Blog
+                </Link>
+              </li>
+              
+              
+              <li>
+                <Link to="/contact" className="hover:text-green-300">
+                  Contact us
+                </Link>
+              </li>
+            </ul>
           </div>
 
           {/* CONTACT */}

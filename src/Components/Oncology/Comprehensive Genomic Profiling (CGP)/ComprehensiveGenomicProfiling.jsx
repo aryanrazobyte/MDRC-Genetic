@@ -66,8 +66,7 @@ Comprehensive Genomic Profiling (CGP)
     {/* <PromoBanner/> */}
      <PromoBanner
   text="
-  Monitor chronic viral infections effectively with
-MDRC immuno suppression testing."
+  Need specialized genetic and molecular solutions? We're here to help."
   buttonText="Book Your Test"
 />
     </>

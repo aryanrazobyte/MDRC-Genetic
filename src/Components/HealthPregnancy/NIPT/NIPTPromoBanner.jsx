@@ -14,7 +14,7 @@ export default function NIPTPromoBanner() {
           shadow-lg shadow-green-500/20"
         >
           <p className="text-sm md:text-lg font-medium text-center md:text-left leading-relaxed">
-            Have questions about our advanced DNA panels or need assistance choosing the right genetic test?
+            Need specialized genetic and molecular solutions? We're here to help.
           </p>
 
           <button

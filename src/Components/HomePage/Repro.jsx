@@ -106,29 +106,54 @@ const ServiceCard = ({ card }) => {
 
 const Repro = () => {
   const sliderRef = useRef(null);
+  const [isPaused, setIsPaused] = useState(false);
+
+  const getScrollStep = () => {
+    const slider = sliderRef.current;
+    if (!slider?.firstElementChild) return 276;
+    const gap = window.innerWidth >= 768 ? 24 : 16;
+    return slider.firstElementChild.offsetWidth + gap;
+  };
 
   const scrollLeft = () => {
-    sliderRef.current?.scrollBy({ left: -260, behavior: "smooth" });
+    sliderRef.current?.scrollBy({ left: -getScrollStep(), behavior: "smooth" });
   };
 
   const scrollRight = () => {
-    sliderRef.current?.scrollBy({ left: 260, behavior: "smooth" });
+    const slider = sliderRef.current;
+    if (!slider) return;
+
+    const step = getScrollStep();
+    const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+    if (slider.scrollLeft >= maxScroll - 10) {
+      slider.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      slider.scrollBy({ left: step, behavior: "smooth" });
+    }
   };
 
-  // ✅ Auto scroll (mobile only)
+  // Auto-rotate carousel on all screen sizes
   useEffect(() => {
-    if (window.innerWidth >= 768) return;
-    const slider = sliderRef.current;
+    if (isPaused) return;
+
     const autoScroll = setInterval(() => {
-      if (slider) {
-        slider.scrollBy({ left: 260, behavior: "smooth" });
-        if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 10) {
-          slider.scrollTo({ left: 0, behavior: "smooth" });
-        }
+      const slider = sliderRef.current;
+      if (!slider) return;
+
+      const gap = window.innerWidth >= 768 ? 24 : 16;
+      const step = (slider.firstElementChild?.offsetWidth ?? 260) + gap;
+      const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+      if (slider.scrollLeft >= maxScroll - 10) {
+        slider.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        slider.scrollBy({ left: step, behavior: "smooth" });
       }
-    }, 2500);
+    }, 3000);
+
     return () => clearInterval(autoScroll);
-  }, []);
+  }, [isPaused]);
 
   return (
     <>
@@ -187,6 +212,10 @@ const Repro = () => {
             {/* 🔹 Cards — KEY FIX: w-[75vw] on mobile instead of min-w */}
             <div
               ref={sliderRef}
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
+              onTouchStart={() => setIsPaused(true)}
+              onTouchEnd={() => setIsPaused(false)}
               className="flex gap-4 md:gap-6 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory pb-2"
             >
               {cards.map((card, index) => (

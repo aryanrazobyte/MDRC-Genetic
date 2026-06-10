@@ -1,71 +1,74 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { GiDna1 } from "react-icons/gi";
-import { HiArrowRight } from "react-icons/hi";
 import PopupForm from "../../Components/PopupForm";
+
+const HERO_IMAGE =
+  "https://res.cloudinary.com/ddcx08e0s/image/upload/v1781071911/final_hvfvco.png";
 
 const HeroSection = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      <section className="relative overflow-hidden text-white bg-gradient-to-b from-[#005E91] to-[#0C759A]">
-
-        {/* Background */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 rounded-full border border-white/20 animate-pulse" />
-          <div className="absolute bottom-10 right-20 w-96 h-96 rounded-full border border-white/10" />
+      <section className="relative min-h-[600px] overflow-hidden bg-gradient-to-b from-[#005E91] to-[#0C759A] text-white lg:min-h-[760px]">
+        {/* Decorative circles — full blue area */}
+        <div className="pointer-events-none absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-10 h-72 w-72 animate-pulse rounded-full border border-white/20" />
+          <div className="absolute bottom-10 right-20 h-96 w-96 rounded-full border border-white/10" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 py-28 lg:py-32 flex flex-col lg:flex-row justify-between">
+        {/* Right half — rectangular image */}
+        <div className="absolute inset-y-0 right-0 hidden w-1/2 lg:block">
+          <img
+            src={HERO_IMAGE}
+            alt="Precision Genomics"
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
+        </div>
 
-          {/* LEFT */}
-          <div className="max-w-3xl z-10">
-            <div className="flex items-center gap-2 mb-6 pt-15">
-              <GiDna1 className="w-5 h-5" />
+        {/* Content — original full-width blue hero height */}
+        <div className="relative z-10 mx-auto flex min-h-[600px] max-w-7xl items-center px-4 py-36 lg:min-h-[760px] lg:py-44">
+          <div className="max-w-3xl">
+            <div className="mb-6 flex items-center gap-2 pt-15">
+              <GiDna1 className="h-5 w-5" />
               <span className="text-sm uppercase tracking-widest">
                 Genetic Division
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="mb-6 text-4xl font-bold md:text-5xl">
               Precision Genomics for <br />
               <span className="text-[#0ECE91]">Better Health</span>
             </h1>
 
-            <p className="text-lg mb-10">
-              MDRC India's Genetic Division delivers advanced molecular diagnostics.
+            <p className="mb-10 text-lg">
+              MDRC India&apos;s Genetic Division delivers advanced molecular
+              diagnostics.
             </p>
 
-            <div className="flex gap-4 flex-wrap">
-
-              {/* Explore */}
-              <button
-  onClick={() => {
-    document
-      .getElementById("services")
-      ?.scrollIntoView({ behavior: "smooth" });
-  }}
-  className=" cursor-pointer border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-[#1160A5]"
->
-  Explore Our Services
-</button>
-
-            </div>
+            <button
+              onClick={() => {
+                document
+                  .getElementById("services")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="cursor-pointer rounded-lg border border-white px-8 py-3 transition-colors hover:bg-white hover:text-[#1160A5]"
+            >
+              Explore Our Services
+            </button>
           </div>
+        </div>
 
-          {/* RIGHT IMAGE */}
-          <div className="flex justify-center">
-            <img
-              src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828059/vite-project/eqi7twgdhim4fec4rwq1.svg"
-              className="mt-10"
-              alt=""
-            />
-          </div>
+        {/* Mobile image */}
+        <div className="relative z-10 h-72 w-full sm:h-96 lg:hidden">
+          <img
+            src={HERO_IMAGE}
+            alt="Precision Genomics"
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
         </div>
       </section>
 
-      {/* ✅ POPUP */}
       <PopupForm isOpen={open} onClose={() => setOpen(false)} />
     </>
   );

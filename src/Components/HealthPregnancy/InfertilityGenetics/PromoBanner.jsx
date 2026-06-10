@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PopupForm from "../../../Components/PopupForm";
 
 export default function PromoBanner({
-  text = "Have questions about our advanced DNA panels or need assistance choosing the right genetic test?",
+  text = "Need specialized genetic and molecular solutions? We're here to help.",
   buttonText = "Enquire Now",
   bgFrom = "#05AF79",
   bgTo = "#04a56f",
