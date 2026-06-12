@@ -43,7 +43,7 @@ const Footer = () => {
 
           {/* LEFT */}
           <div>
-            <h3 className="text-4xl lg:text-5xl font-bold mb-4">
+            <h3 className="text-4xl lg:text-5xl font-medium lg:font-bold mb-5">
               Book Your Genetic Test
             </h3>
             <p className="text-lg text-[#F5F5F5]">
