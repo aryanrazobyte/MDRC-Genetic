@@ -13,6 +13,7 @@ import InfectiousDisease from "./Components/Infectious Disease/InfectiousDisease
 import CytogeneticandFISH from "./Components/Cytogenetic and FISH/CytogeneticandFISH";
 import RarePanel from "./Components/Rare NGS Panel/RarePanel";
 import ScrollToTop from "./ScrollToTop.jsx";
+import PageLayout from "./Components/PageLayout";
 import WholeExome from "./Components/Whole Exome and Genome Sequencing/WholeExome";
 import Pharmacogenomics from "./Components/Pharmacogenomics/Pharmacogenomics";
 import AdvancedSequencing from "./Components/AdvancedSequencing/AdvancedSequencing";
@@ -105,6 +106,7 @@ function App() {
     </div>
   <Routes>
           <Route path="/" element={<Home />} />
+          <Route element={<PageLayout />}>
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<BlogSection />} />
            <Route path="/blog/:slug" element={<BlogDetail />} />
@@ -188,11 +190,7 @@ function App() {
           <Route path="/service/liquidbiopsy" element={<LiquidBiopsy/>} />
           <Route path="/service/hereditarycancergenomics" element={<HereditaryCancerGenomics/>} />
           <Route path="/service/rnasequencingforfusion" element={<RNASequencingforFusion/>} />
-
-
-
-          
-
+          </Route>
         </Routes>
 
         <Footer />

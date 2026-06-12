@@ -9,8 +9,8 @@ const Microarray = () => {
   return (
     <>
       <div className="font-roboto">
-        <section className="relative overflow-hidden text-white bg-gradient-to-b from-[#005E91] to-[#0C759A] pt-16 md:pt-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-10 sm:py-14 md:py-16 lg:py-20 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10">
+        <section className="relative overflow-hidden text-white bg-gradient-to-b from-[#005E91] to-[#0C759A] lg:pt-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-6 sm:py-8 md:py-16 lg:py-20 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-10">
             <div className="text-white text-center md:text-left w-full md:w-1/2">
               <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Chromosomal <br className="hidden sm:block" /> Microarray{" "}

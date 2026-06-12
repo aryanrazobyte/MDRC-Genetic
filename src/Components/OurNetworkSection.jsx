@@ -15,7 +15,7 @@ const networkImages = [
 
 function OurNetworkSection() {
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className="py-8 px-4 lg:py-16 bg-gray-50">
       <h2 className="text-center text-3xl md:text-4xl font-bold text-[#0b4a80] mb-12">
         Our Network
       </h2>

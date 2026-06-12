@@ -118,7 +118,7 @@ function ContactUs() {
     <div className="font-roboto">
 
       {/* BANNER */}
-      <section className="relative min-h-[350px] md:min-h-[420px] pt-24 md:pt-32">
+      <section className="relative min-h-[220px] md:min-h-[420px] lg:pt-32">
         <img
           src="/images/contact-banner.jpg"
           alt="banner"
@@ -131,7 +131,7 @@ function ContactUs() {
       </section>
 
       {/* MAIN */}
-      <section className="py-16 px-4 lg:px-8 bg-[#f4f8fb]">
+      <section className="py-8 px-4 lg:py-16 lg:px-8 bg-[#f4f8fb]">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
 
           {/* LEFT - LOCATIONS */}

@@ -46,7 +46,7 @@ const screeningGroups = [
 
 const NIPTScreenFor = () => {
   return (
-    <section className="bg-[#F5F7F9] py-10 sm:py-12 px-4 sm:px-6 font-roboto">
+    <section className="bg-[#F5F7F9] py-6 sm:py-8 px-4 lg:py-12 sm:px-6 font-roboto">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 sm:mb-10">
           <span className="text-[#15AEE5] font-medium text-sm sm:text-base">

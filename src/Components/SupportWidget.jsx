@@ -347,16 +347,16 @@ const SupportWidget = () => {
           @media (max-width: 768px) {
 
   .sw-btn-wrap {
-    bottom: 20px;
-    right: 15px;
-    transform: scale(0.88);
+    bottom: 16px;
+    right: 12px;
+    transform: scale(0.82);
     transform-origin: bottom right;
     z-index: 100;
   }
 
   .sw-btn {
     gap: 8px;
-    padding: 8px 14px 8px -50px;
+    padding: 8px 14px 8px 8px;
   }
 
   .sw-icon-wrap {

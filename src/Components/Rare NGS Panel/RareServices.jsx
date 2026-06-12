@@ -67,7 +67,7 @@ const services = [
 
 const RareServices = () => {
   return (
-    <section className="bg-[#f4f6f8] py-14 px-4">
+    <section className="bg-[#f4f6f8] py-8 px-4 lg:py-14">
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}

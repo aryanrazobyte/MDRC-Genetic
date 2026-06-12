@@ -101,7 +101,7 @@ const panels = [
 
 export default function MetabolomicsPanels() {
   return (
-    <section className="bg-[#F5F7F9] font-roboto py-10 sm:py-12 px-4 sm:px-6">
+    <section className="bg-[#F5F7F9] font-roboto py-6 sm:py-8 px-4 lg:py-12 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mx-auto mb-8 sm:mb-12">
           <span className="text-[#15AEE5] font-medium text-sm sm:text-base">

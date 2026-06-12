@@ -64,7 +64,7 @@ const limitations = [
 
 const NIPTInfoSection = () => {
   return (
-    <div className="bg-gray-100 py-10 sm:py-12 px-4 sm:px-6 md:px-10 font-roboto">
+    <div className="bg-gray-100 py-6 sm:py-8 px-4 lg:py-12 sm:px-6 md:px-10 font-roboto">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 sm:mb-10">
           <h2 className="text-xl sm:text-2xl md:text-[25px] font-semibold text-gray-800">

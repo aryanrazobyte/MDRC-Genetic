@@ -38,7 +38,7 @@ const Footer = () => {
     <footer className="w-full text-white">
 
       {/* ================= BOOKING ================= */}
-      <div className="bg-gradient-to-b from-[#005E91] to-[#0C759A] py-16">
+      <div className="bg-gradient-to-b from-[#005E91] to-[#0C759A] py-8 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
 
           {/* LEFT */}

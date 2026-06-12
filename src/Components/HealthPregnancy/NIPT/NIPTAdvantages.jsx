@@ -39,7 +39,7 @@ const advantages = [
 
 const NIPTAdvantages = () => {
   return (
-    <section className="bg-white py-10 sm:py-12 px-4 sm:px-6 font-roboto">
+    <section className="bg-white py-6 sm:py-8 px-4 lg:py-12 sm:px-6 font-roboto">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-xl sm:text-2xl md:text-[25px] font-semibold text-gray-800 mb-8 text-center">
           Why Choose EVAA™ Prenatal Screening?

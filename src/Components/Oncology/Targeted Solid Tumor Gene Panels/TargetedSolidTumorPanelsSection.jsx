@@ -4,7 +4,7 @@ import TargetedSolidTumorPanelsGenomicInfo from "./TargetedSolidTumorPanelsGenom
 const TargetedSolidTumorPanelsSection = () => {
   return (
     <>
-    <div className="bg-gray-100 py-12 px-4 md:px-10 font-roboto">
+    <div className="bg-gray-100 py-6 px-4 md:px-10 font-roboto lg:py-12">
       
       <div className="max-w-5xl mx-auto">
         

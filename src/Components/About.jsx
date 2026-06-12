@@ -9,10 +9,10 @@ import OurNetworkSection from "./OurNetworkSection";
 const About = () => {
   return (
     <div className="font-roboto">
-      <section className="relative overflow-hidden text-white bg-gradient-to-b from-[#005E91] to-[#0C759A] pt-10">
-        <div className="max-w-7xl mx-auto px-4 md:px-10 py-12 md:py-20 flex flex-col md:flex-row items-center justify-between gap-8">
+      <section className="relative overflow-hidden text-white bg-gradient-to-b from-[#005E91] to-[#0C759A] lg:pt-10">
+        <div className="max-w-7xl mx-auto px-4 md:px-10 py-6 md:py-20 flex flex-col md:flex-row items-center justify-between gap-4 lg:gap-8">
           
-          <div className="text-white text-center md:text-left mt-10">
+          <div className="text-white text-center md:text-left mt-0 lg:mt-10">
             {/* <button
               onClick={() => window.location.href = "/"}
               className="flex items-center justify-center md:justify-start gap-2 text-xl mb-4"

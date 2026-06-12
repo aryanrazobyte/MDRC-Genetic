@@ -32,7 +32,7 @@ const services = [
 const GeneticServices = () => {
   return (
     <>
-    <section className="bg-[#f4f6f8] py-14 px-4">
+    <section className="bg-[#f4f6f8] py-8 px-4 lg:py-14">
       <div className="max-w-5xl mx-auto">
 
         {/* Heading */}

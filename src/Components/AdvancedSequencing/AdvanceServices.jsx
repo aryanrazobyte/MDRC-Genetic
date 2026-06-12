@@ -44,7 +44,7 @@ const AdvanceServices = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="bg-[#f4f6f8] py-14 px-4">
+    <section className="bg-[#f4f6f8] py-8 px-4 lg:py-14">
       <div className="max-w-3xl mx-auto">
 
         <h2 className="text-center text-[24px] md:text-[26px] font-semibold text-[#1f4e79] mb-12">

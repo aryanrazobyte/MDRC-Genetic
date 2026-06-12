@@ -24,8 +24,8 @@
 //   };
 
 //   return (
-//     <section className="py-16 px-4 bg-gray-50">
-//       <h2 className="text-3xl font-bold text-center mb-10 text-[#0b4a80]">
+//     <section className="py-8 px-4 lg:py-16 bg-gray-50">
+//       <h2 className="text-3xl font-bold text-center mb-5 lg:mb-10 text-[#0b4a80]">
 //         Our Blogs
 //       </h2>
 
@@ -75,8 +75,8 @@ function BlogSection() {
   return (
     <>
       {/* 🔥 Hero Section */}
-      <section className="relative w-full h-[250px] md:h-[300px] bg-gradient-to-r from-[#005E91] to-[#0077B6] flex items-center justify-center">
-        <div className="text-center mt-20 text-white">
+      <section className="relative w-full h-[180px] md:h-[300px] bg-gradient-to-r from-[#005E91] to-[#0077B6] flex items-center justify-center">
+        <div className="text-center mt-0 lg:mt-20 text-white">
           <h1 className=" text-3xl md:text-5xl font-bold">Blog</h1>
           <p className="mt-2 text-sm md:text-lg opacity-90">
             Home / Blog
@@ -85,11 +85,11 @@ function BlogSection() {
       </section>
 
       {/* 🔥 Blog Grid Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-8 px-4 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
 
           {/* Title */}
-          <div className="text-center mb-10">
+          <div className="text-center mb-5 lg:mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
               Latest Blogs
             </h2>

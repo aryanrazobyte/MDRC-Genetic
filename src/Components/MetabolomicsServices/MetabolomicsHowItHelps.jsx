@@ -11,7 +11,7 @@ const benefits = [
 
 const MetabolomicsHowItHelps = () => {
   return (
-    <section className="bg-white px-4 py-10 font-roboto sm:px-6 sm:py-14">
+    <section className="bg-white px-4 py-6 lg:py-10 font-roboto sm:px-6 sm:py-14">
       <div className="mx-auto grid max-w-6xl items-center gap-9 text-gray-800 lg:grid-cols-[minmax(0,1fr)_minmax(380px,0.9fr)] lg:gap-14">
         <div>
           <h2 className="mb-6 text-center text-xl font-semibold sm:text-2xl lg:text-left lg:text-[28px]">

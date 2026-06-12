@@ -4,7 +4,7 @@ import PromoBanner from "./CarrierScreeningPromoBanner";
 const CarrierScreeningWhyChoose = () => {
   return (
     <>
-    <section className="bg-gray-100 py-14 px-4 md:px-10 font-roboto">
+    <section className="bg-gray-100 py-8 px-4 lg:py-14 md:px-10 font-roboto">
       
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         

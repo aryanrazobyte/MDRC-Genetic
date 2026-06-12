@@ -4,7 +4,7 @@ import PromoBanner from "../InfertilityGenetics/PromoBanner";
 const MicroarrayWhyChoose = () => {
   return (
     <>
-      <section className="bg-gray-100 py-10 sm:py-14 px-4 sm:px-6 md:px-10 font-roboto">
+      <section className="bg-gray-100 py-10 sm:py-8 px-4 lg:py-14 sm:px-6 md:px-10 font-roboto">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-5 sm:mb-6 leading-snug">

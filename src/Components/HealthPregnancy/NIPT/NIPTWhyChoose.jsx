@@ -43,7 +43,7 @@ const mdrcCards = [
 const NIPTWhyChoose = () => {
   return (
     <>
-      <section className="bg-white py-10 sm:py-14 px-4 sm:px-6 md:px-10 font-roboto">
+      <section className="bg-white py-10 sm:py-8 px-4 lg:py-14 sm:px-6 md:px-10 font-roboto">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-8 sm:mb-10 text-center leading-snug">
             Why MDRC?

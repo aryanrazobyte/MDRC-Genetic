@@ -15,14 +15,14 @@ function BlogDetail() {
   // ❌ agar blog nahi mila
   if (!blog) {
     return (
-      <div className="py-20 text-center">
+      <div className="py-8 lg:py-20 text-center">
         <h2 className="text-2xl font-bold">Blog Not Found</h2>
       </div>
     );
   }
 
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className="py-8 px-4 lg:py-16 bg-gray-50">
       <div className="max-w-4xl mx-auto  overflow-hidden">
 
         {/* Image */}

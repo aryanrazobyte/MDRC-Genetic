@@ -70,7 +70,7 @@ function DoctorsSection() {
   };
 
   return (
-    <section className="bg-[#E6F8FF] py-16 px-4 mt-5 relative ">
+    <section className="bg-[#E6F8FF] py-8 px-4 lg:py-16 mt-5 relative ">
       {/* Header */}
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold text-[#005C96]">
