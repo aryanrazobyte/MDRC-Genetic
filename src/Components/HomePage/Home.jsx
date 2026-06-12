@@ -48,7 +48,7 @@ const Home = () => (
         {/* CONTENT */}
         <div className="flex flex-col gap-1 order-1 md:order-2">
           <h2 className="text-[28px] md:text-[32px] font-bold text-[#424040]">
-            Genomics and Molecular division
+            Genomics & Molecular Division
           </h2>
 
           <p className="text-[#424040] text-[16px] md:text-[18px] font-medium leading-relaxed">
