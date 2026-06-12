@@ -32,26 +32,26 @@ const FoundationSection = () => {
     <section
       className="w-full 
                  bg-transparent md:bg-gradient-to-b md:from-[#FFFFFF] md:to-[#E6F8FF] 
-                 border-t-4 border-[#1e88c8] font-roboto py-6 md:py-12"
+                 border-t-4 border-[#1e88c8] font-roboto py-4 md:py-6"
     >
       {/* Container */}
       <div className="max-w-6xl mx-auto px-3 md:px-4">
 
         {/* Card wrapper */}
-        <div className="rounded-3xl bg-gradient-to-b from-[#FFFFFF] to-[#E6F8FF] p-5 shadow-md md:shadow-none md:rounded-none md:bg-transparent transition-all duration-300 relative z-10">
+        <div className="rounded-2xl bg-gradient-to-b from-[#FFFFFF] to-[#E6F8FF] p-3 sm:p-4 shadow-md md:shadow-none md:rounded-none md:bg-transparent transition-all duration-300 relative z-10">
 
           {/* Heading */}
-          <div className="text-center mb-6 md:mb-10">
-            <h2 className="text-2xl md:text-4xl font-semibold text-[#005c96]">
+          <div className="text-center mb-4 md:mb-5">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#005c96]">
               Our Foundation of Trust
             </h2>
-            <p className="text-gray-600 text-sm md:text-xl mt-2">
+            <p className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg mt-1">
               Decades of experience & A network of certified labs.
             </p>
           </div>
 
           {/* Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
 
             {/* Item 1 */}
             <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-center md:text-left">

@@ -37,16 +37,16 @@ const FAQ = () => {
   };
 
   return (
-    <section className="w-full py-8 px-4  flex justify-center">
+    <section className="w-full py-5 sm:py-6 md:py-8 px-4 sm:px-6 flex justify-center">
       <div className="max-w-4xl w-full">
 
         {/* Heading */}
-        <h2 className="text-[28px] md:text-[32px] font-semibold text-gray-800 mb-10 text-center">
+        <h2 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-semibold text-gray-800 mb-4 sm:mb-5 md:mb-6 text-center">
           Frequently Asked Questions
         </h2>
 
         {/* FAQ List */}
-        <div className="space-y-5">
+        <div className="space-y-3 sm:space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
@@ -55,9 +55,9 @@ const FAQ = () => {
               {/* Question */}
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center p-5 text-left cursor-pointer"
+                className="w-full flex justify-between items-center p-3 sm:p-4 md:p-5 text-left cursor-pointer gap-3"
               >
-                <span className="text-[16px] md:text-[17px] font-medium text-gray-700">
+                <span className="text-sm sm:text-[15px] md:text-[17px] font-medium text-gray-700 text-left">
                   {faq.question}
                 </span>
 
@@ -78,7 +78,7 @@ const FAQ = () => {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="px-5 pb-5 text-[15px] text-gray-600 leading-relaxed">
+                  <p className="px-3 sm:px-4 md:px-5 pb-3 sm:pb-4 md:pb-5 text-sm sm:text-[15px] text-gray-600 leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

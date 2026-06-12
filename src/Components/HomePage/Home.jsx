@@ -18,7 +18,7 @@ const Home = () => (
    
 
     {/* ✅ HERO SECTION */}
-    <div className="pt-[36px]">
+    <div className="overflow-x-hidden pt-28 lg:pt-32">
       <HeroSection />
     </div>
 
@@ -26,7 +26,7 @@ const Home = () => (
     <FoundationSection />
 
     <section
-      className="w-full py-12 px-4 md:px-10 bg-cover bg-center relative"
+      className="w-full py-6 px-4 sm:px-6 md:py-8 md:px-8 lg:px-10 bg-cover bg-center relative"
       style={{
         backgroundImage:
           "url('https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827997/vite-project/c0mcnqdruhqlbeg9ahxi.svg')",
@@ -34,7 +34,7 @@ const Home = () => (
     >
       <div className="absolute inset-0"></div>
 
-      <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-4 sm:gap-5 md:gap-6 items-center">
         
         {/* IMAGE */}
         <div className="order-2 md:order-1">
@@ -47,22 +47,22 @@ const Home = () => (
 
         {/* CONTENT */}
         <div className="flex flex-col gap-1 order-1 md:order-2">
-          <h2 className="text-[28px] md:text-[32px] font-bold text-[#424040]">
+          <h2 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold text-[#424040]">
             Genomics & Molecular Division
           </h2>
 
-          <p className="text-[#424040] text-[16px] md:text-[18px] font-medium leading-relaxed">
+          <p className="text-[#424040] text-sm sm:text-[15px] md:text-[16px] lg:text-[18px] font-medium leading-relaxed">
             <strong>Genomics</strong> is the cornerstone of precision medicine, moving diagnostics from reactive treatment to proactive prevention. By analyzing an individual’s unique {" "}
             <strong>genetic architecture</strong>
             we can identify molecular markers that traditional pathology often overlooks or is unable to determine
           </p>
 
-          <p className="mt-2 text-[#424040] text-[16px] md:text-[18px] font-medium leading-relaxed">
+          <p className="mt-1.5 text-[#424040] text-sm sm:text-[15px] md:text-[16px] lg:text-[18px] font-medium leading-relaxed">
             Our topline QTof LC-MS/MS system can identify very minute quantities of metabolites up to picogram level and this helps in certain disease conditions that can not be identified by other means.
           </p>
 
 
-         <p className="mt-2 text-[#424040] text-[16px] md:text-[18px] font-medium leading-relaxed">
+         <p className="mt-1.5 text-[#424040] text-sm sm:text-[15px] md:text-[16px] lg:text-[18px] font-medium leading-relaxed">
             This data-driven approach allows for the
             <strong> detection of hereditary predispositions </strong>, the diagnosis of complex rare diseases, and the optimization of therapeutic interventions based on an individual's specific biological makeup.
           </p>
@@ -73,7 +73,7 @@ const Home = () => (
 
           {/* BUTTON */}
           <Link to={"/about"}>
-            <button className="cursor-pointer mt-6 w-max bg-gradient-to-r from-[#05AF79] to-[#0ECE91] text-white text-base md:text-lg px-5 md:px-6 py-2 md:py-3 rounded-lg hover:opacity-90 transition">
+            <button className="cursor-pointer mt-4 w-max bg-gradient-to-r from-[#05AF79] to-[#0ECE91] text-white text-sm sm:text-base md:text-lg px-4 sm:px-5 md:px-6 py-2 md:py-2.5 rounded-lg hover:opacity-90 transition">
               KNOW MORE ABOUT MDRC GENOMICS
             </button>
           </Link>
@@ -98,19 +98,19 @@ const Home = () => (
     <FAQ />
 
     {/* MEDIA SECTION */}
-    <section className="py-16 bg-[#F0FBFF] px-6">
-      <div className="max-w-7xl mx-auto text-center mb-10">
-        <h2 className="text-[#005C96] font-bold text-[32px]">
+    <section className="py-6 sm:py-8 md:py-10 bg-[#F0FBFF] px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto text-center mb-4 sm:mb-6">
+        <h2 className="text-[#005C96] font-bold text-xl sm:text-2xl md:text-[28px] lg:text-[32px]">
           Media & Gallery
         </h2>
 
-        <p className="text-[#424040] text-[20px] font-medium">
+        <p className="text-[#424040] text-sm sm:text-base md:text-lg lg:text-[20px] font-medium mt-1">
           Showcasing Care, Compassion and Clinical Excellence
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="h-[180px] lg:h-[380px] rounded-xl overflow-hidden">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-5">
+        <div className="h-[140px] sm:h-[160px] md:h-[180px] lg:h-[300px] xl:h-[340px] rounded-xl overflow-hidden">
           <img
             src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827967/vite-project/ms4y2uifdn8lesorqe1t.svg"
             className="w-full h-full object-cover"
@@ -118,8 +118,8 @@ const Home = () => (
           />
         </div>
 
-        <div className="flex flex-col gap-6">
-          <div className="h-[180px] overflow-hidden">
+        <div className="flex flex-col gap-3 sm:gap-4 md:gap-5">
+          <div className="h-[120px] sm:h-[140px] md:h-[160px] lg:h-[145px] xl:h-[160px] overflow-hidden">
             <img
               src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827889/vite-project/l9cbqqbsyvrcm38olewl.svg"
               className="w-full h-full object-cover"
@@ -127,7 +127,7 @@ const Home = () => (
             />
           </div>
 
-          <div className="h-[180px] overflow-hidden">
+          <div className="h-[120px] sm:h-[140px] md:h-[160px] lg:h-[145px] xl:h-[160px] overflow-hidden">
             <img
               src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827885/vite-project/cjhj8jn5xk3vxxfykq81.svg"
               className="w-full h-full object-cover"
@@ -136,7 +136,7 @@ const Home = () => (
           </div>
         </div>
 
-        <div className="h-[180px] lg:h-[380px] rounded-xl overflow-hidden">
+        <div className="h-[140px] sm:h-[160px] md:h-[180px] lg:h-[300px] xl:h-[340px] rounded-xl overflow-hidden">
           <img
             src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827883/vite-project/rkor9gmxcdp8kbu98ksl.svg"
             className="w-full h-full object-cover"

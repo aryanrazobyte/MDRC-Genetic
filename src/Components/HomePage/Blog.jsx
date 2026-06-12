@@ -62,16 +62,16 @@ const BlogSection = () => {
   };
 
   return (
-    <section className="bg-white py-5">
-      <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-[32px] text-[#002E73] font-bold">Blog</h2>
-        <p className="opacity-80 text-[#424040] text-[20px] font-medium mb-5">
+    <section className="bg-white py-4 sm:py-5 md:py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+        <h2 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] text-black font-bold">Blog</h2>
+        <p className="opacity-80 text-[#424040] text-sm sm:text-base md:text-lg lg:text-[20px] font-medium mb-3 sm:mb-4">
           How Genomics Predicts Your Future Health
         </p>
 
         {/* Slider */}
         <div
-          className="relative overflow-hidden pb-6"
+          className="relative overflow-hidden pb-3 sm:pb-4"
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
@@ -84,17 +84,17 @@ const BlogSection = () => {
             {blogs.map((blog, index) => (
               <div
                 key={index}
-                className="w-full sm:w-1/2 lg:w-1/3 px-3 flex-shrink-0"
+                className="w-full sm:w-1/2 lg:w-1/3 px-2 sm:px-3 flex-shrink-0"
               >
                 <Link to={`/blogs/${blog.slug}`}>
                   <div className="bg-white rounded-xl shadow-lg h-full flex flex-col hover:shadow-xl transition cursor-pointer">
                     <img
                       src={blog.image}
                       alt={blog.text}
-                      className="w-full h-56 object-cover p-2 rounded-xl"
+                      className="w-full h-40 sm:h-48 md:h-52 object-cover p-2 rounded-xl"
                     />
-                    <div className="p-4 flex-1 flex items-center">
-                      <p className="text-[#005C96] text-[20px] font-medium">
+                    <div className="p-3 sm:p-4 flex-1 flex items-center">
+                      <p className="text-[#005C96] text-sm sm:text-base md:text-lg lg:text-[20px] font-medium">
                         {blog.text}
                       </p>
                     </div>

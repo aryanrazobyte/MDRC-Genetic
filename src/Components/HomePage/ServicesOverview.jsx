@@ -61,41 +61,41 @@ const services = [
 ];
 
 const ServicesOverview = () => (
-  <section id="services" className="bg-[#F5F7F9] py-16 lg:py-16">
-    <div className="container mx-auto px-4">
-      <div className="text-center  mx-auto mb-12">
-        <span className="text-[#15AEE5] font-medium ">Our Expertise</span>
-        <h2 className="font-heading text-[32px] font-bold  mt-1 mb-1">
-        Specialised Genetic and Molecular Services
+  <section id="services" className="bg-[#F5F7F9] py-6 sm:py-8 md:py-10 lg:py-12">
+    <div className="container mx-auto px-4 sm:px-6">
+      <div className="text-center mx-auto mb-5 sm:mb-6 md:mb-8">
+        <span className="text-[#15AEE5] text-sm sm:text-base font-medium">Our Expertise</span>
+        <h2 className="font-heading text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold mt-1 mb-1">
+        Specialised Genetic & Molecular Services
         </h2>
-        <p className="text-[20px] text-[#424040] font-regular">
+        <p className="text-sm sm:text-base md:text-lg lg:text-[20px] text-[#424040] font-regular px-2">
           From prenatal screening to rare disease diagnosis, our laboratory delivers clinically validated genomic insights.
         </p>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-5 lg:gap-6 max-w-7xl mx-auto">
   {services.map((service, i) => {
     const isLast = i === services.length ;
     return (
       <Link
         key={service.path}
         to={service.path}
-        className={`group bg-card rounded-xl p-6 lg:p-8 
+        className={`group bg-card rounded-xl p-4 sm:p-5 lg:p-6 
        shadow-[0_0_10px_#7e7e7e] transition-all duration-300 animate-fade-in-up
         ${isLast ? "sm:col-span-2 lg:col-span-2" : ""}`}
         style={{ animationDelay: `${i * 80}ms` }}
       >
         <div
-  className="w-[56px] h-[56px] rounded-lg flex items-center justify-center mb-5"
+  className="w-11 h-11 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
   style={{ background: "linear-gradient(to right, #15AEE5, #0C607F)" }}
 >
   <service.icon className="text-white" />
 </div>
 
-        <h3 className="font-modium text-[20px]  mb-2">
+        <h3 className="font-modium text-base sm:text-lg lg:text-[20px] mb-1.5 sm:mb-2">
           {service.title}
         </h3>
 
-        <p className=" text-[#727070] text-[16px]  mb-4">
+        <p className="text-[#727070] text-sm sm:text-[15px] lg:text-[16px] mb-2 sm:mb-3">
           {service.description}
         </p>
 

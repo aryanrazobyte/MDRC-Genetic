@@ -53,12 +53,12 @@ const ServiceCard = ({ card }) => {
   return (
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition h-full">
       {/* Header */}
-      <div className="bg-gray-100 px-4 py-3 flex items-center justify-center font-semibold text-[#005C96] text-sm md:text-lg text-center min-h-[52px]">
+      <div className="bg-gray-100 px-3 py-2 sm:px-4 sm:py-2.5 flex items-center justify-center font-semibold text-[#005C96] text-xs sm:text-sm md:text-base lg:text-lg text-center min-h-[40px] sm:min-h-[44px]">
         <span>{card.title}</span>
       </div>
 
       {/* Image area */}
-      <div className="relative h-[180px] md:h-[240px] overflow-hidden bg-white flex items-center justify-center">
+      <div className="relative h-[150px] sm:h-[170px] md:h-[200px] lg:h-[220px] overflow-hidden bg-white flex items-center justify-center">
 
         {/* Skeleton loader */}
         {!loaded && !error && (
@@ -158,18 +158,18 @@ const Repro = () => {
   return (
     <>
       {/* 🔹 Header */}
-      <div className="text-center pt-6 pb-5 bg-gradient-to-r from-[#0C759A] to-[#005E91] text-white">
-        <h2 className="text-xl md:text-[25px] font-semibold px-4">
+      <div className="text-center pt-4 pb-3 sm:pt-5 sm:pb-4 bg-gradient-to-r from-[#0C759A] to-[#005E91] text-white">
+        <h2 className="text-lg sm:text-xl md:text-[25px] font-semibold px-4">
           High-End Testing
         </h2>
-        <p className="text-[15px] md:text-[20px] opacity-90 px-4">
+        <p className="text-sm sm:text-[15px] md:text-lg lg:text-[20px] opacity-90 px-4 mt-0.5">
           Our comprehensive range of next-generation genetic tests.
         </p>
       </div>
 
       {/* 🔹 Section */}
       <div
-        className="py-8 md:py-12 bg-cover bg-center relative"
+        className="py-5 sm:py-6 md:py-8 bg-cover bg-center relative"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827793/vite-project/jn3lx6mi0bepp3pvc0u6.png')",
