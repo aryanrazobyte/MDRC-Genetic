@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const cards = [
@@ -106,6 +105,7 @@ const ServiceCard = ({ card }) => {
 
 const Repro = () => {
   const sliderRef = useRef(null);
+  const scrollEndTimerRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
 
   const getScrollStep = () => {
@@ -115,22 +115,45 @@ const Repro = () => {
     return slider.firstElementChild.offsetWidth + gap;
   };
 
-  const scrollLeft = () => {
-    sliderRef.current?.scrollBy({ left: -getScrollStep(), behavior: "smooth" });
-  };
-
-  const scrollRight = () => {
+  const resetLoopPosition = () => {
     const slider = sliderRef.current;
     if (!slider) return;
 
-    const step = getScrollStep();
-    const maxScroll = slider.scrollWidth - slider.clientWidth;
+    const firstClone = slider.children[cards.length];
+    if (!firstClone) return;
 
-    if (slider.scrollLeft >= maxScroll - 10) {
-      slider.scrollTo({ left: 0, behavior: "smooth" });
-    } else {
-      slider.scrollBy({ left: step, behavior: "smooth" });
+    const loopWidth =
+      firstClone.getBoundingClientRect().left -
+      slider.firstElementChild.getBoundingClientRect().left;
+
+    if (slider.scrollLeft >= loopWidth - 2) {
+      slider.style.scrollBehavior = "auto";
+      slider.style.scrollSnapType = "none";
+      slider.scrollLeft -= loopWidth;
+
+      requestAnimationFrame(() => {
+        slider.style.scrollBehavior = "";
+        slider.style.scrollSnapType = "";
+      });
     }
+  };
+
+  const handleScroll = () => {
+    window.clearTimeout(scrollEndTimerRef.current);
+    scrollEndTimerRef.current = window.setTimeout(resetLoopPosition, 350);
+  };
+
+  const handleTouchStart = () => {
+    window.clearTimeout(scrollEndTimerRef.current);
+    setIsPaused(true);
+  };
+
+  const handleTouchEnd = () => {
+    window.clearTimeout(scrollEndTimerRef.current);
+    scrollEndTimerRef.current = window.setTimeout(() => {
+      resetLoopPosition();
+      setIsPaused(false);
+    }, 500);
   };
 
   // Auto-rotate carousel on all screen sizes
@@ -141,18 +164,16 @@ const Repro = () => {
       const slider = sliderRef.current;
       if (!slider) return;
 
-      const gap = window.innerWidth >= 768 ? 24 : 16;
-      const step = (slider.firstElementChild?.offsetWidth ?? 260) + gap;
-      const maxScroll = slider.scrollWidth - slider.clientWidth;
-
-      if (slider.scrollLeft >= maxScroll - 10) {
-        slider.scrollTo({ left: 0, behavior: "smooth" });
-      } else {
-        slider.scrollBy({ left: step, behavior: "smooth" });
-      }
+      resetLoopPosition();
+      requestAnimationFrame(() => {
+        slider.scrollBy({ left: getScrollStep(), behavior: "smooth" });
+      });
     }, 3000);
 
-    return () => clearInterval(autoScroll);
+    return () => {
+      clearInterval(autoScroll);
+      window.clearTimeout(scrollEndTimerRef.current);
+    };
   }, [isPaused]);
 
   return (
@@ -179,48 +200,21 @@ const Repro = () => {
         <div className="absolute inset-0 bg-white/80 backdrop-blur-sm" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4">
-
-          {/* 🔹 Mobile Arrows row */}
-          <div className="flex md:hidden justify-between items-center mb-3 px-1">
-            <button
-              onClick={scrollLeft}
-              className="bg-green-500 p-2 rounded-full shadow-md active:scale-95 transition"
-            >
-              <HiChevronLeft size={20} className="text-white" />
-            </button>
-            <span className="text-xs text-gray-400 font-medium tracking-wide">
-              Swipe to explore
-            </span>
-            <button
-              onClick={scrollRight}
-              className="bg-green-500 p-2 rounded-full shadow-md active:scale-95 transition"
-            >
-              <HiChevronRight size={20} className="text-white" />
-            </button>
-          </div>
-
           <div className="relative">
-
-            {/* 🔹 Left Arrow — desktop only */}
-            <button
-              onClick={scrollLeft}
-              className="hidden md:flex absolute -left-6 top-1/2 -translate-y-1/2 z-10 bg-green-500 p-3 rounded-full shadow-lg hover:scale-110 transition"
-            >
-              <HiChevronLeft size={22} className="text-white" />
-            </button>
-
             {/* 🔹 Cards — KEY FIX: w-[75vw] on mobile instead of min-w */}
             <div
               ref={sliderRef}
+              onScroll={handleScroll}
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
-              onTouchStart={() => setIsPaused(true)}
-              onTouchEnd={() => setIsPaused(false)}
-              className="flex gap-4 md:gap-6 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory pb-2"
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
+              onTouchCancel={handleTouchEnd}
+              className="flex gap-4 md:gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-2"
             >
-              {cards.map((card, index) => (
+              {[...cards, ...cards].map((card, index) => (
                 <div
-                  key={index}
+                  key={`${card.title}-${index}`}
                   // ✅ Fixed pixel width — not relative to parent
                   style={{ width: "260px", minWidth: "260px" }}
                   className="md:min-w-[320px] md:w-[320px] lg:min-w-[350px] lg:w-[350px] flex-shrink-0 snap-start"
@@ -229,15 +223,6 @@ const Repro = () => {
                 </div>
               ))}
             </div>
-
-            {/* 🔹 Right Arrow — desktop only */}
-            <button
-              onClick={scrollRight}
-              className="hidden md:flex absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-green-500 p-3 rounded-full shadow-lg hover:scale-110 transition"
-            >
-              <HiChevronRight size={22} className="text-white" />
-            </button>
-
           </div>
         </div>
       </div>

@@ -43,9 +43,9 @@ const Footer = () => {
 
           {/* LEFT */}
           <div>
-            <h3 className="text-4xl lg:text-5xl font-medium lg:font-bold mb-5">
+            <h2 className="mb-5 whitespace-nowrap text-[clamp(1.2rem,6.5vw,2.25rem)] font-medium sm:text-4xl lg:text-5xl lg:font-bold">
               Book Your Genetic Test
-            </h3>
+            </h2>
             <p className="text-lg text-[#F5F5F5]">
               Take the first step towards understanding your genetic health.
               Our expert counselors will guide you through the process.
